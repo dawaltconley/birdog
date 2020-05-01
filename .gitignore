@@ -1,0 +1,8 @@
+node_modules/
+lambda.zip
+.lambda-config/
+.DS_Store
+*~
+*.swp
+*.swo
+sh.exe.stackdump
