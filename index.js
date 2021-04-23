@@ -19,108 +19,108 @@
  * - *if* it can narrow the ammount of queries made, various fields to filter members
  */
 
-const axios = require('axios')
-const parseLeg = require('legislative-parser')
+const axios = require('axios');
+const parseLeg = require('legislative-parser');
 
-const chambers = [ 'house', 'senate' ]
-const legTypes = [ 'bill', 'simple resolution', 'joint resolution', 'concurrent resolution' ]
+const chambers = [ 'house', 'senate' ];
+const legTypes = [ 'bill', 'simple resolution', 'joint resolution', 'concurrent resolution' ];
 
 const isString = obj => typeof obj === 'string' || obj instanceof String;
 
 const guessSession = (time=new Date()) => {
-    const years = time.getFullYear() - 1997
+    const years = time.getFullYear() - 1997;
     return {
         congress: Math.floor(years / 2) + 105,
         session: years % 2 + 1
-    }
-}
+    };
+};
 
 class MOCVote {
     constructor({ key, congress, session }={}) {
-        if (!key) throw new Error(`Missing required config option 'key'. Must provide a valid ProPublica API key when configuring MOCVote.`)
+        if (!key) throw new Error(`Missing required config option 'key'. Must provide a valid ProPublica API key when configuring MOCVote.`);
         this._axios = axios.create({
             baseURL: 'https://api.propublica.org/congress/v1',
             headers: { 'X-API-Key': key }
-        })
+        });
 
-        const current = guessSession()
-        this.congress = congress || current.congress
-        this.session = session || current.session
-        this.reps = []
-        this._retries = 0
+        const current = guessSession();
+        this.congress = congress || current.congress;
+        this.session = session || current.session;
+        this.reps = [];
+        this._retries = 0;
     }
 
     async updateMems(aggressive=false, { congress=this.congress }={}) {
-        const updateTime = new Date()
-        let members = chambers.map(c => this._axios.get(`/${congress}/${c.toLowerCase()}/members.json`))
+        const updateTime = new Date();
+        let members = chambers.map(c => this._axios.get(`/${congress}/${c.toLowerCase()}/members.json`));
         try {
-            members = await Promise.all(members)
+            members = await Promise.all(members);
         } catch (e) {
             if (e.errors === 'The congress is not valid' && congress === this.congress) {
                 if (this._retries < 2) {
-                    this.congress--
-                    this._retries++
+                    this.congress--;
+                    this._retries++;
                 } else {
-                    let current = await this._axios.get('/members/senate/RI/current.json') // backup method of getting current congress by pulling from current mems of an arbitrary state
-                    current = await this._axios.get(current.data.results[0].api_uri)
-                    this.congress = current.data.results[0].roles[0].congress
+                    let current = await this._axios.get('/members/senate/RI/current.json'); // backup method of getting current congress by pulling from current mems of an arbitrary state
+                    current = await this._axios.get(current.data.results[0].api_uri);
+                    this.congress = current.data.results[0].roles[0].congress;
                 }
-                return this.updateMems(aggressive)
+                return this.updateMems(aggressive);
             }
-            this._retries = 0
-            throw e
+            this._retries = 0;
+            throw e;
         }
-        members = [].concat(...members.map(r => r.data.results[0].members))
+        members = [].concat(...members.map(r => r.data.results[0].members));
         this.reps = this.reps.filter(rep => { // filter out any saved rep not returned by the latest members query
-            const memMatch = members.find(m => m.id === rep.id && (!aggressive || m.last_updated !== rep.last_updated)) // if aggresive, update all reps whose profile has been updated
-            return memMatch && rep.roles[0].congress === congress && new Date(rep.roles[0].end_date) > updateTime // return false if saved rep's term has expired
-        })
+            const memMatch = members.find(m => m.id === rep.id && (!aggressive || m.last_updated !== rep.last_updated)); // if aggresive, update all reps whose profile has been updated
+            return memMatch && rep.roles[0].congress === congress && new Date(rep.roles[0].end_date) > updateTime; // return false if saved rep's term has expired
+        });
         members = members
             .filter(m => !this.reps.find(rep => rep.id === m.id)) // only get info for reps not remaining in {
-            .map(m => this._axios.get(m.api_uri))
-        members = await Promise.all(members)
-        this.reps = this.reps.concat(...members.map(m => m.data.results[0]))
-        return this.reps
+            .map(m => this._axios.get(m.api_uri));
+        members = await Promise.all(members);
+        this.reps = this.reps.concat(...members.map(m => m.data.results[0]));
+        return this.reps;
     }
 
     async getBill(ref) {
-        const bill = isString(ref) ? parseLeg(ref.trim()) : ref
+        const bill = isString(ref) ? parseLeg(ref.trim()) : ref;
         if (bill.type && !legTypes.includes(bill.type.toLowerCase()))
-            throw new Error(`Must provide a legislation identifier to get cosponsors. Provide ${ref} had type: ${bill.type}`)
-        const congress = bill.congress || this.congress
-        return this._axios.get(`/${congress}/bills/${bill.id}.json`)
+            throw new Error(`Must provide a legislation identifier to get cosponsors. Provide ${ref} had type: ${bill.type}`);
+        const congress = bill.congress || this.congress;
+        return this._axios.get(`/${congress}/bills/${bill.id}.json`);
     }
 
     async getBillsByKeyword(keyword) {
-        return this._axios.get(`/bills/subjects/${keyword}.json`)
+        return this._axios.get(`/bills/subjects/${keyword}.json`);
     }
 
     async getCosponsors(ref) {
-        const bill = isString(ref) ? parseLeg(ref.trim()) : ref
+        const bill = isString(ref) ? parseLeg(ref.trim()) : ref;
         if (bill.type && !legTypes.includes(bill.type.toLowerCase()))
-            throw new Error(`Must provide a legislation identifier to get cosponsors. Provide ${ref} had type: ${bill.type}`)
-        const congress = bill.congress || this.congress
-        return this._axios.get(`/${congress}/bills/${bill.id}/cosponsors.json`)
+            throw new Error(`Must provide a legislation identifier to get cosponsors. Provide ${ref} had type: ${bill.type}`);
+        const congress = bill.congress || this.congress;
+        return this._axios.get(`/${congress}/bills/${bill.id}/cosponsors.json`);
     }
 
     async getVote(ref) {
-        const leg = isString(ref) ? parseLeg(ref.trim()) : ref
-        const congress = leg.congress || this.congress
-        const session = leg.session || this.session
+        const leg = isString(ref) ? parseLeg(ref.trim()) : ref;
+        const congress = leg.congress || this.congress;
+        const session = leg.session || this.session;
         if (legTypes.includes(leg.type.toLowerCase())) {
-            const decidingVotes = []
-            let bill = await this._axios.get(`/${congress}/bills/${leg.id}.json`)
-            bill = bill.data.results[0]
+            const decidingVotes = [];
+            let bill = await this._axios.get(`/${congress}/bills/${leg.id}.json`);
+            bill = bill.data.results[0];
             for (const vote of bill.votes) {
-                const isDecidingVote = getDecidingVote(bill.bill_type).includes(vote.question)
+                const isDecidingVote = getDecidingVote(bill.bill_type).includes(vote.question);
                 if (isDecidingVote)
-                    decidingVotes.push(this._axios.get(vote.api_uri))
+                    decidingVotes.push(this._axios.get(vote.api_uri));
             }
-            return Promise.all(decidingVotes)
+            return Promise.all(decidingVotes);
         } else if (leg.type.toLowerCase() === 'vote') {
-            return this._axios.get(`/${congress}/votes/${session}/votes/${leg.id}.json`)
+            return this._axios.get(`/${congress}/votes/${session}/votes/${leg.id}.json`);
         } else {
-            throw new Error(`Must provide either a legislation or vote identifier to get votes. Provide ${ref} had type: ${leg.type}`)
+            throw new Error(`Must provide either a legislation or vote identifier to get votes. Provide ${ref} had type: ${leg.type}`);
         }
     }
 }
@@ -130,21 +130,21 @@ const getDecidingVote = type => {
         case 'hr':
             // fall through
         case 'hjres':
-            return [ 'On Passage', 'On Motion to Suspend the Rules and Pass' ]
+            return [ 'On Passage', 'On Motion to Suspend the Rules and Pass' ];
         case 'hconres':
             // fall through
         case 'hres':
-            return [ 'On Agreeing to the Resolution', 'On Motion to Suspend the Rules and Agree' ]
+            return [ 'On Agreeing to the Resolution', 'On Motion to Suspend the Rules and Agree' ];
         case 's':
-            return [ 'On Passage of the Bill' ]
+            return [ 'On Passage of the Bill' ];
         case 'sjres':
-            return [ 'On the Joint Resolution' ]
+            return [ 'On the Joint Resolution' ];
         case 'sconres':
-            return [ 'On the Concurrent Resolution' ]
+            return [ 'On the Concurrent Resolution' ];
         case 'sres':
-            return [ 'On the Resolution' ]
+            return [ 'On the Resolution' ];
     }
-    throw new Error(`Bad legislation type ${type}, could not get question for deciding vote.`)
-}
+    throw new Error(`Bad legislation type ${type}, could not get question for deciding vote.`);
+};
 
-module.exports = MOCVote
+module.exports = MOCVote;
