@@ -95,12 +95,44 @@ class MOCVote {
         const leg = isString(ref) ? parseLeg(ref.trim()) : ref
         const congress = leg.congress || this.congress
         const session = leg.session || this.session
-        if (leg.type.toLowerCase() === 'vote') {
+        if (legTypes.includes(leg.type.toLowerCase())) {
+            const decidingVotes = []
+            let bill = await this._axios.get(`/${congress}/bills/${leg.id}.json`)
+            bill = bill.data.results[0]
+            for (const vote of bill.votes) {
+                const isDecidingVote = getDecidingVote(bill.bill_type).includes(vote.question)
+                if (isDecidingVote)
+                    decidingVotes.push(this._axios.get(vote.api_uri))
+            }
+            return Promise.all(decidingVotes)
+        } else if (leg.type.toLowerCase() === 'vote') {
             return this._axios.get(`/${congress}/votes/${session}/votes/${leg.id}.json`)
         } else {
             throw new Error(`Must provide either a legislation or vote identifier to get votes. Provide ${ref} had type: ${leg.type}`)
         }
     }
+}
+
+const getDecidingVote = type => {
+    switch (type) {
+        case 'hr':
+            // fall through
+        case 'hjres':
+            return [ 'On Passage', 'On Motion to Suspend the Rules and Pass' ]
+        case 'hconres':
+            // fall through
+        case 'hres':
+            return [ 'On Agreeing to the Resolution', 'On Motion to Suspend the Rules and Agree' ]
+        case 's':
+            return [ 'On Passage of the Bill' ]
+        case 'sjres':
+            return [ 'On the Joint Resolution' ]
+        case 'sconres':
+            return [ 'On the Concurrent Resolution' ]
+        case 'sres':
+            return [ 'On the Resolution' ]
+    }
+    throw new Error(`Bad legislation type ${type}, could not get question for deciding vote.`)
 }
 
 module.exports = MOCVote
