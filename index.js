@@ -83,6 +83,14 @@ class MOCVote {
         return this.reps
     }
 
+    async getBill(ref) {
+        const bill = isString(ref) ? parseLeg(ref.trim()) : ref
+        if (bill.type && !legTypes.includes(bill.type.toLowerCase()))
+            throw new Error(`Must provide a legislation identifier to get cosponsors. Provide ${ref} had type: ${bill.type}`)
+        const congress = bill.congress || this.congress
+        return this._axios.get(`/${congress}/bills/${bill.id}.json`)
+    }
+
     async getCosponsors(ref) {
         const bill = isString(ref) ? parseLeg(ref.trim()) : ref
         if (bill.type && !legTypes.includes(bill.type.toLowerCase()))
