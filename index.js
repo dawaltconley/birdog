@@ -25,6 +25,8 @@ const parseLeg = require('legislative-parser')
 const chambers = [ 'house', 'senate' ]
 const legTypes = [ 'bill', 'simple resolution', 'joint resolution', 'concurrent resolution' ]
 
+const isString = obj => typeof obj === 'string' || obj instanceof String;
+
 const guessSession = (time=new Date()) => {
     const years = time.getFullYear() - 1997
     return {
@@ -82,9 +84,7 @@ class MOCVote {
     }
 
     async getCosponsors(ref) {
-        const bill = typeof ref === 'string' || ref instanceof String
-            ? parseLeg(ref.trim())
-            : ref
+        const bill = isString(ref) ? parseLeg(ref.trim()) : ref
         if (bill.type && !legTypes.includes(bill.type.toLowerCase()))
             throw new Error(`Must provide a legislation identifier to get cosponsors. Provide ${ref} had type: ${bill.type}`)
         const congress = bill.congress || this.congress
@@ -92,7 +92,7 @@ class MOCVote {
     }
 
     async getVote(ref) {
-        const leg = parseLeg(ref.trim())
+        const leg = isString(ref) ? parseLeg(ref.trim()) : ref
         const congress = leg.congress || this.congress
         const session = leg.session || this.session
         if (leg.type.toLowerCase() === 'vote') {
