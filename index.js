@@ -91,6 +91,10 @@ class MOCVote {
         return this._axios.get(`/${congress}/bills/${bill.id}.json`)
     }
 
+    async getBillsByKeyword(keyword) {
+        return this._axios.get(`/bills/subjects/${keyword}.json`)
+    }
+
     async getCosponsors(ref) {
         const bill = isString(ref) ? parseLeg(ref.trim()) : ref
         if (bill.type && !legTypes.includes(bill.type.toLowerCase()))
