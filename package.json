@@ -13,7 +13,8 @@
     "legislative-parser": "^0.2.1"
   },
   "devDependencies": {
-    "@dawaltconley/secret": "^0.1.0",
-    "eslint": "^6.8.0"
+    "@dawaltconley/cue": "^0.1.2",
+    "eslint": "^6.8.0",
+    "keytar": "^7.6.0"
   }
 }
