@@ -31,7 +31,7 @@ const guessSession = (time=new Date()) => {
     const years = time.getFullYear() - 1997;
     return {
         congress: Math.floor(years / 2) + 105,
-        session: years % 2 + 1
+        session: Math.abs(years) % 2 + 1
     };
 };
 
