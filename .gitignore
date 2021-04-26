@@ -1,3 +1,4 @@
+examples/
 node_modules/
 lambda.zip
 .lambda-config/
