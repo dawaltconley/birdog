@@ -117,11 +117,13 @@ class MOCVote {
             for (const vote of bill.votes) {
                 const isDecidingVote = getDecidingVote(bill.bill_type).includes(vote.question);
                 if (isDecidingVote)
-                    decidingVotes.push(this._axios.get(vote.api_uri));
+                    decidingVotes.push(this._axios.get(vote.api_url));
             }
-            return Promise.all(decidingVotes);
+            let response = await Promise.all(decidingVotes);
+            return response.map(v => v.data.results.votes.vote);
         } else if (leg.type.toLowerCase() === 'vote') {
-            return this._axios.get(`/${congress}/votes/${session}/votes/${leg.id}.json`);
+            let response = await this._axios.get(`/${congress}/${leg.chamber.toLowerCase()}/sessions/${session}/votes/${leg.id}.json`);
+            return [ response.data.results.votes.vote ];
         } else {
             throw new Error(`Must provide either a legislation or vote identifier to get votes. Provide ${ref} had type: ${leg.type}`);
         }
