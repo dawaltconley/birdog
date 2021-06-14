@@ -88,11 +88,13 @@ class MOCVote {
         if (bill.type && !legTypes.includes(bill.type.toLowerCase()))
             throw new Error(`Must provide a legislation identifier to get cosponsors. Provide ${ref} had type: ${bill.type}`);
         const congress = bill.congress || this.congress;
-        return this._axios.get(`/${congress}/bills/${bill.id}.json`);
+        const response = await this._axios.get(`/${congress}/bills/${bill.id}.json`);
+        return response.data.results;
     }
 
     async getBillsByKeyword(keyword) {
-        return this._axios.get(`/bills/subjects/${keyword}.json`);
+        const response = await this._axios.get(`/bills/subjects/${keyword}.json`);
+        return response.data.results;
     }
 
     async getCosponsors(ref) {
@@ -100,7 +102,8 @@ class MOCVote {
         if (bill.type && !legTypes.includes(bill.type.toLowerCase()))
             throw new Error(`Must provide a legislation identifier to get cosponsors. Provide ${ref} had type: ${bill.type}`);
         const congress = bill.congress || this.congress;
-        return this._axios.get(`/${congress}/bills/${bill.id}/cosponsors.json`);
+        const response = await this._axios.get(`/${congress}/bills/${bill.id}/cosponsors.json`);
+        return response.data.results;
     }
 
     async getVote(ref) {
