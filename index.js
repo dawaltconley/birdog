@@ -114,10 +114,20 @@ class MOCVote {
             const decidingVotes = [];
             let bill = await this._axios.get(`/${congress}/bills/${leg.id}.json`);
             bill = bill.data.results[0];
+            // warn and exit if bill has not been voted on
+            if (!bill.votes.length) {
+                console.warn(`The bill ${bill.number} has not been voted on.`);
+                return [];
+            }
             for (const vote of bill.votes) {
                 const isDecidingVote = getDecidingVote(bill.bill_type).includes(vote.question);
                 if (isDecidingVote)
                     decidingVotes.push(this._axios.get(vote.api_url));
+            }
+            // warn and exit if bill has been voted on, but no votes are decisive.
+            if (!decidingVotes.length) {
+                console.warn(`Couldn't identify a decisive vote for ${bill.number}.`);
+                return [];
             }
             let response = await Promise.all(decidingVotes);
             return response.map(v => v.data.results.votes.vote);
