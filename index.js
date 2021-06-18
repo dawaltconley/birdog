@@ -150,6 +150,8 @@ class MOCVote {
             cosponsors = [],
             votes = [],
             // keywords = [], // could add later, but would result in a very long spreadsheet
+            delimiter = ',',
+            subDelimiter = delimiter
         } = opts;
 
         let congress = this.congress;
@@ -189,6 +191,7 @@ class MOCVote {
         ];
 
         let options = {
+            delimiter: delimiter,
             header: true,
             columns: header
         };
@@ -200,8 +203,9 @@ class MOCVote {
             let repName = [ role.short_title, rep.first_name, rep.middle_name, rep.last_name, rep.suffix ];
             repName = repName.filter(n => n).join(' ');
             let repCommittees = role.committees
-                .map(c => `${c.name} (${c.title})`)
-                .join(', ');
+                .concat(role.subcommittees)
+                .map(c => `${c.code} (${c.title})`)
+                .join(subDelimiter);
 
             data.push([
                 district, // 'District'
