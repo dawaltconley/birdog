@@ -79,7 +79,7 @@ class MOCVote {
             return memMatch && rep.roles[0].congress === congress && new Date(rep.roles[0].end_date) > updateTime; // return false if saved rep's term has expired
         });
         members = members
-            .filter(m => !this.reps.find(rep => rep.id === m.id)) // only get info for reps not remaining in
+            .filter(m => !this.reps.find(rep => rep.id === m.id)) // only get info for reps not remaining in local data
             .map(m => this._axios.get(m.api_uri));
         members = await Promise.all(members);
         this.reps = this.reps.concat(...members.map(m => m.data.results[0]));
