@@ -19,11 +19,14 @@
  * - *if* it can narrow the ammount of queries made, various fields to filter members
  */
 
+// const fsp = require('fs').promises
 const axios = require('axios');
+const csv = require('csv-stringify');
 const parseLeg = require('legislative-parser');
 
 const chambers = [ 'house', 'senate' ];
 const legTypes = [ 'bill', 'simple resolution', 'joint resolution', 'concurrent resolution' ];
+// const states = fsp.readFile('states_hash.json').then(JSON.parse)
 
 const isString = obj => typeof obj === 'string' || obj instanceof String;
 
@@ -133,10 +136,95 @@ class MOCVote {
             return response.map(v => v.data.results.votes.vote);
         } else if (leg.type.toLowerCase() === 'vote') {
             let response = await this._axios.get(`/${congress}/${leg.chamber.toLowerCase()}/sessions/${session}/votes/${leg.id}.json`);
+            if (response.data.status === 'ERROR')
+                for (const e of response.data.errors)
+                    throw new Error(e.error);
             return [ response.data.results.votes.vote ];
         } else {
             throw new Error(`Must provide either a legislation or vote identifier to get votes. Provide ${ref} had type: ${leg.type}`);
         }
+    }
+
+    async getCSV(opts={}) {
+        let {
+            cosponsors = [],
+            votes = [],
+            // keywords = [], // could add later, but would result in a very long spreadsheet
+        } = opts;
+
+        let congress = this.congress;
+
+        let reps = this.reps.length ? this.reps : this.updateMems();
+        cosponsors = Promise.all(cosponsors.map(ref => this.getCosponsors(ref))); // need way to override default congress of these methods without modifying congress of class obj
+        votes = Promise.all(votes.map(ref => this.getVote(ref)));
+
+        [ reps, cosponsors, votes ] = await Promise.all([ reps, cosponsors, votes ]);
+
+        cosponsors = cosponsors.flat(); // needed because currently the methods are returning (mostly single-item) arrays
+        votes = votes.flat();
+
+        let header = [
+            'District',
+            'Representative',
+            'Party',
+            'Chamber',
+            'Website',
+            'Phone',
+            'Twitter',
+            'Committees',
+            'Votes with party',
+            'Votes against party',
+            ...cosponsors.map(bill => `Cosponsor of ${bill.number}, "${bill.title}"`),
+            ...votes.map(v => {
+                let voteItem;
+                if (v.amendment && v.amendment.number && v.bill && v.bill.number) {
+                    voteItem = `${v.amendment.number} to ${v.bill.number}, "${v.bill.short_title}"`;
+                } else if (v.bill && v.bill.number) {
+                    voteItem = `${v.bill.number}, "${v.bill.short_title}"`;
+                } else {
+                    throw new Error('Unrecognized type of vote: ' + v.url);
+                }
+                return `Vote on ${voteItem}`;
+            })
+        ];
+
+        let options = {
+            header: true,
+            columns: header
+        };
+        let data = [];
+
+        for (let rep of reps) {
+            let role = rep.roles.find(role => role.congress == congress);
+            let district = role.district ? role.state+'-'+role.district : role.state;
+            let repName = [ role.short_title, rep.first_name, rep.middle_name, rep.last_name, rep.suffix ];
+            repName = repName.filter(n => n).join(' ');
+            let repCommittees = role.committees
+                .map(c => `${c.name} (${c.title})`)
+                .join(', ');
+
+            data.push([
+                district, // 'District'
+                repName, // 'Representative'
+                role.party, // 'Party'
+                role.chamber, // 'Chamber'
+                rep.url, // 'Website'
+                role.phone, // 'Phone'
+                rep.twitter_account, // 'Twitter'
+                repCommittees, // 'Committees'
+                role.votes_with_party_pct, // 'Votes with party'
+                role.votes_against_party_pct, // 'Votes against party'
+                ...cosponsors.map(bill => bill.cosponsors.find(c => c.cosponsor_id === rep.id) || bill.sponsor_id === rep.id ? "Yes" : null),
+                ...votes.map(v => {
+                    let memVote = v.positions.find(p => p.member_id === rep.id);
+                    return memVote ? memVote.vote_position : null;
+                })
+            ]);
+        }
+
+        return new Promise((resolve, reject) =>
+            csv(data, options, (err, output) =>
+                err ? reject(err) : resolve(output)));
     }
 }
 
