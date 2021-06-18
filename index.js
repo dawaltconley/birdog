@@ -214,7 +214,13 @@ class MOCVote {
                 repCommittees, // 'Committees'
                 role.votes_with_party_pct, // 'Votes with party'
                 role.votes_against_party_pct, // 'Votes against party'
-                ...cosponsors.map(bill => bill.cosponsors.find(c => c.cosponsor_id === rep.id) || bill.sponsor_id === rep.id ? "Yes" : null),
+                ...cosponsors.map(bill => {
+                    if (bill.sponsor_id === rep.id)
+                        return 'Original';
+                    if (bill.cosponsors.find(c => c.cosponsor_id === rep.id))
+                        return 'Yes';
+                    return null;
+                }),
                 ...votes.map(v => {
                     let memVote = v.positions.find(p => p.member_id === rep.id);
                     return memVote ? memVote.vote_position : null;
