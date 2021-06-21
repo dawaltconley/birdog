@@ -9,14 +9,14 @@
   "author": "Dylan Awalt-Conley",
   "license": "ISC",
   "dependencies": {
+    "@dawaltconley/cue": "^0.1.2",
     "axios": "^0.21.1",
     "csv-stringify": "^5.6.2",
+    "keytar": "^7.7.0",
     "legislative-parser": "^0.2.1",
     "yargs": "^17.0.1"
   },
   "devDependencies": {
-    "@dawaltconley/cue": "^0.1.2",
-    "eslint": "^6.8.0",
-    "keytar": "^7.6.0"
+    "eslint": "^6.8.0"
   }
 }
