@@ -19,7 +19,25 @@
   "devDependencies": {
     "eslint": "^6.8.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawaltconley/birdog.git"
+  },
   "bin": {
-      "birdog": "./birdog"
-  }
+    "birdog": "birdog"
+  },
+  "bugs": {
+    "url": "https://github.com/dawaltconley/birdog/issues"
+  },
+  "homepage": "https://github.com/dawaltconley/birdog#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "keywords": [
+    "congress",
+    "votes",
+    "bills",
+    "legislation",
+    "propublica"
+  ]
 }
