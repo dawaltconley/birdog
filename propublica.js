@@ -1,3 +1,5 @@
+const path = require('path');
+const app = require(path.join(__dirname, 'package.json')).name;
 const axios = require('axios');
 const parseLeg = require('legislative-parser');
 
@@ -14,9 +16,9 @@ const guessSession = (time=new Date()) => {
     };
 };
 
-class MOCVote {
+class ProPublica {
     constructor({ key, congress, session }={}) {
-        if (!key) throw new Error(`Missing required config option 'key'. Must provide a valid ProPublica API key when configuring MOCVote.`);
+        if (!key) throw new Error(`Missing required config option 'key'. Must provide a valid ProPublica API key when configuring ${app}.`);
         this._axios = axios.create({
             baseURL: 'https://api.propublica.org/congress/v1',
             headers: { 'X-API-Key': key }
@@ -145,4 +147,4 @@ const getDecidingVote = type => {
     throw new Error(`Bad legislation type ${type}, could not get question for deciding vote.`);
 };
 
-module.exports = MOCVote;
+module.exports = ProPublica;
