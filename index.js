@@ -24,5 +24,6 @@ const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 
 yargs(hideBin(process.argv))
+    .alias('help', 'h')
     .commandDir(path.join(__dirname, 'commands'))
     .argv;
