@@ -3,7 +3,7 @@ const keys = require(path.join(__dirname, '..', 'keys.js'));
 
 exports.command = 'config';
 
-exports.describe = 'setup using API keys';
+exports.describe = 'set up using API keys';
 
 exports.builder = {};
 
