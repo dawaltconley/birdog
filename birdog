@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*
  * This should have the following methods:
  * 1. Specify a number of bills, automatically search all mems of congress for

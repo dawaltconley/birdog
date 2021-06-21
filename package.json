@@ -1,8 +1,8 @@
 {
-  "name": "track-moc",
+  "name": "birdog",
   "version": "0.1.0",
-  "description": "A simple module using the ProPublica database to track the voting records of members of the US Congress.",
-  "main": "index.js",
+  "description": "A simple CLI using the ProPublica database to track the voting records of members of the US Congress.",
+  "main": "birdog",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0"
+  },
+  "bin": {
+      "birdog": "./birdog"
   }
 }
