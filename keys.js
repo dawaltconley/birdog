@@ -1,9 +1,7 @@
 const { whisper } = require('@dawaltconley/cue');
 const keytar = require('keytar');
 const path = require('path');
-
 const app = require(path.join(__dirname, 'package.json')).name;
-const defaultService = 'api.propublica.org';
 
 const keys = {
     propublica: {
