@@ -39,7 +39,6 @@ exports.builder = {
 };
 
 exports.handler = async argv => {
-    console.info(argv);
     const pp = new ProPublica({
         key: await keys.get('propublica'),
         congress: argv.congress
