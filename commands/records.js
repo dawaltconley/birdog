@@ -4,7 +4,7 @@ const csv = require('csv-stringify');
 const ProPublica = require(path.join(__dirname, '..', 'propublica.js'));
 const keys = require(path.join(__dirname, '..', 'keys.js'));
 
-exports.command = 'record';
+exports.command = [ '$0', 'records' ];
 
 exports.describe = 'get voting records for all members of congress';
 
