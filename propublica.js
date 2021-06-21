@@ -8,14 +8,6 @@ const legTypes = [ 'bill', 'simple resolution', 'joint resolution', 'concurrent 
 
 const isString = obj => typeof obj === 'string' || obj instanceof String;
 
-const guessSession = (time=new Date()) => {
-    const years = time.getFullYear() - 1997;
-    return {
-        congress: Math.floor(years / 2) + 105,
-        session: Math.abs(years) % 2 + 1
-    };
-};
-
 class ProPublica {
     constructor({ key, congress, session }={}) {
         if (!key) throw new Error(`Missing required config option 'key'. Must provide a valid ProPublica API key when configuring ${app}.`);
@@ -24,11 +16,22 @@ class ProPublica {
             headers: { 'X-API-Key': key }
         });
 
-        const current = guessSession();
-        this.congress = congress || current.congress;
-        this.session = session || current.session;
+        if (congress) {
+            this.congress = congress;
+            this.session = session || 1;
+        } else {
+            Object.assign(this, ProPublica.guessSession());
+        }
         this.reps = [];
         this._retries = 0;
+    }
+
+    static guessSession (time=new Date()) {
+        const years = time.getFullYear() - 1997;
+        return {
+            congress: Math.floor(years / 2) + 105,
+            session: Math.abs(years) % 2 + 1
+        };
     }
 
     async updateMems(aggressive=false, { congress=this.congress }={}) {

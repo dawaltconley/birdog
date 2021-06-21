@@ -33,6 +33,7 @@ exports.builder = {
         describe: 'congress to use when pulling members and searching for bills',
         type: 'number',
         nargs: 1,
+        default: ProPublica.guessSession().congress,
         requiresArg: true
     }
 };
