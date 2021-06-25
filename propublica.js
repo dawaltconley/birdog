@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const app = require(path.join(__dirname, 'package.json')).name;
 const axios = require('axios');
@@ -8,8 +9,25 @@ const legTypes = [ 'bill', 'simple resolution', 'joint resolution', 'concurrent 
 
 const isString = obj => typeof obj === 'string' || obj instanceof String;
 
+const getLastModified = file => {
+    try {
+        return fs.statSync(file).mtime;
+    } catch(e) {
+        if (e.code !== 'ENOENT')
+            throw e;
+    }
+};
+
+const writeCache = (file, ...args) => fs.promises.writeFile(file, ...args)
+    .catch(e => {
+        if (e.code !== 'ENOENT')
+            throw e;
+        fs.mkdirSync(path.dirname(file), { recursive: true }); // make sure path to cache exists
+        return fs.promises.writeFile(file, ...args);
+    });
+
 class ProPublica {
-    constructor({ key, congress, session }={}) {
+    constructor({ key, cacheDir, congress, session }={}) {
         if (!key) throw new Error(`Missing required config option 'key'. Must provide a valid ProPublica API key when configuring ${app}.`);
         this._axios = axios.create({
             baseURL: 'https://api.propublica.org/congress/v1',
@@ -22,6 +40,7 @@ class ProPublica {
         } else {
             Object.assign(this, ProPublica.guessSession());
         }
+        this.cacheDir = cacheDir || path.join(__dirname, '.cache', app);
         this.reps = [];
         this._retries = 0;
 
@@ -41,12 +60,26 @@ class ProPublica {
     }
 
     async updateMems(aggressive=false, { congress=this.congress }={}) {
-        // should make congress top-level part of member cache data, since cache can only be loaded if congress matches
+        // use cache if updated less than 24 hours ago
         const updateTime = new Date();
+        let cachePath = path.join(this.cacheDir, congress.toString(), 'members.json');
+        let cacheUpdated = getLastModified(cachePath);
+        if (cacheUpdated && (updateTime - cacheUpdated < 86400000)) {
+            if (!this.reps.length)
+                this.reps = await fs.promises.readFile(cachePath).then(JSON.parse);
+            return this.reps;
+        }
+
+        // if cache is old, fetch latest member data from ProPublica
+        let loadCache = [];
+        if (this.reps.length)
+            loadCache = this.reps;
+        else if (cacheUpdated)
+            loadCache = fs.promises.readFile(cachePath).then(JSON.parse);
         let members = chambers.map(c => this._axios.get(`/${congress}/${c.toLowerCase()}/members.json`));
         try {
             members = await Promise.all(members);
-        } catch (e) {
+        } catch (e) { // attempt to id current congress if value is invalid (maybe incorporate into all _axios calls)
             if (e.errors === 'The congress is not valid' && congress === this.congress) {
                 if (this._retries < 2) {
                     this.congress--;
@@ -61,6 +94,9 @@ class ProPublica {
             this._retries = 0;
             throw e;
         }
+
+        // identify which members need updating
+        this.reps = await Promise.resolve(loadCache);
         members = [].concat(...members.map(r => r.data.results[0].members));
         this.reps = this.reps.filter(rep => { // filter out any saved rep not returned by the latest members query
             const memMatch = members.find(m => m.id === rep.id && (!aggressive || m.last_updated !== rep.last_updated)); // if aggresive, update all reps whose profile has been updated
@@ -69,8 +105,13 @@ class ProPublica {
         members = members
             .filter(m => !this.reps.find(rep => rep.id === m.id)) // only get info for reps not remaining in local data
             .map(m => this._axios.get(m.api_uri));
+        if (!members.length)
+            return this.reps;
+
+        // update member data; cache and return updated data
         members = await Promise.all(members);
         this.reps = this.reps.concat(...members.map(m => m.data.results[0]));
+        await writeCache(cachePath, JSON.stringify(this.reps)); // write data to cache, while keeping in memory... maybe a better way since I don't actually need to wait for this to complete; can be done in background
         return this.reps;
     }
 
