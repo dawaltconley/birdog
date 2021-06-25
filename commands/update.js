@@ -27,6 +27,6 @@ exports.handler = async argv => {
         congress: argv.congress
     });
     if (argv.force)
-        fs.unlinkSync(this.memberCache());
+        await pp.repsCache.delete();
     return pp.updateMems({ aggressive: true });
 };
