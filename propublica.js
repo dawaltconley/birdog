@@ -63,7 +63,7 @@ class ProPublica {
         return path.join(this.cacheDir, congress.toString(), 'members.json');
     }
 
-    async updateMems(aggressive=false, { congress=this.congress }={}) {
+    async updateMems({ aggressive=false, congress=this.congress }={}) {
         // use cache if updated less than 24 hours ago
         const updateTime = new Date();
         let cachePath = this.memberCache(congress);
