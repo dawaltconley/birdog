@@ -24,6 +24,12 @@ class ProPublica {
         }
         this.reps = [];
         this._retries = 0;
+
+        this.updateMems = this.updateMems.bind(this);
+        this.getBill = this.getBill.bind(this);
+        this.getBillsByKeyword = this.getBillsByKeyword.bind(this);
+        this.getCosponsors = this.getCosponsors.bind(this);
+        this.getVote = this.getVote.bind(this);
     }
 
     static guessSession (time=new Date()) {
