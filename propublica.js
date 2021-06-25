@@ -57,12 +57,15 @@ class ProPublica {
             headers: { 'X-API-Key': key }
         });
 
+        let current = ProPublica.guessSession();
+
         if (congress) {
             this.congress = congress;
             this.session = session || 1;
         } else {
-            Object.assign(this, ProPublica.guessSession());
+            Object.assign(this, current);
         }
+        this.current = current.congress === this.congress && current.session === this.session;
         this.repsCache = new Cache(this.congress, 'members.json');
         this.reps = this.repsCache.read().then(r => r || []);
         this._retries = 0;
@@ -95,7 +98,7 @@ class ProPublica {
         try {
             members = await Promise.all(members);
         } catch (e) { // attempt to id current congress if value is invalid (maybe incorporate into all _axios calls)
-            if (e.errors === 'The congress is not valid' && this.congress === this.congress) {
+            if (e.errors === 'The congress is not valid' && this.current) {
                 if (this._retries < 2) {
                     this.congress--;
                     this._retries++;
