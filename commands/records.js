@@ -44,7 +44,7 @@ exports.handler = async argv => {
         congress: argv.congress
     });
 
-    let reps = pp.reps.length ? pp.reps : pp.updateMems();
+    let reps = pp.updateMems();
     let cosponsors = argv.cosponsors.map(ref => pp.getCosponsors(ref));
     let votes = argv.votes.map(ref => pp.getVote(ref));
 
