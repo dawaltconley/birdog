@@ -64,7 +64,7 @@ class ProPublica {
         const updateTime = new Date();
         let cachePath = path.join(this.cacheDir, congress.toString(), 'members.json');
         let cacheUpdated = getLastModified(cachePath);
-        if (cacheUpdated && (updateTime - cacheUpdated < 86400000)) {
+        if (!aggressive && cacheUpdated && (updateTime - cacheUpdated < 86400000)) {
             if (!this.reps.length)
                 this.reps = await fs.promises.readFile(cachePath).then(JSON.parse);
             return this.reps;
