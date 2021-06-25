@@ -12,23 +12,25 @@ const isString = obj => typeof obj === 'string' || obj instanceof String;
 class Cache {
     constructor(...filePath) {
         this.path = path.join(__dirname, '.cache', app, ...filePath.map(p => p.toString()));
-        try {
-            this.modified = fs.statSync(this.path).mtime;
-        } catch (e) {
-            if (e.code === 'ENOENT') {
-                fs.mkdirSync(path.dirname(this.path), { recursive: true });
-            } else {
-                throw e;
-            }
-        }
+        if (!this.modified)
+            fs.mkdirSync(path.dirname(this.path), { recursive: true });
 
         this.write = this.write.bind(this);
         this.read = this.read.bind(this);
         this.delete = this.delete.bind(this);
     }
 
+    get modified() {
+        try {
+            return fs.statSync(this.path).mtime;
+        } catch (e) {
+            if (e.code === 'ENOENT')
+                return 0;
+            throw e;
+        }
+    }
+
     write(data, ...args) {
-        this.modified = new Date();
         return fs.promises.writeFile(this.path, JSON.stringify(data), ...args);
     }
 
@@ -83,7 +85,7 @@ class ProPublica {
     async updateMems({ aggressive=false }={}) {
         // use cache if updated less than 24 hours ago
         const updateTime = new Date();
-        if (!aggressive && this.repsCache.modified && (updateTime - this.repsCache.modified < 86400000)) {
+        if (!aggressive && (updateTime - this.repsCache.modified < 86400000)) {
             this.reps = await Promise.resolve(this.reps);
             return this.reps;
         }
