@@ -24,7 +24,8 @@
     "url": "git+https://github.com/dawaltconley/birdog.git"
   },
   "bin": {
-    "birdog": "birdog"
+    "birdog": "birdog",
+    "birddog": "birdog"
   },
   "bugs": {
     "url": "https://github.com/dawaltconley/birdog/issues"
