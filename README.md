@@ -2,7 +2,7 @@
 
 A simple CLI using the ProPublica database to track the voting records of members of the US Congress.
 
-## Install &amp; Configure
+## Install &amp; configure
 
 Install via npm:
 
@@ -37,6 +37,10 @@ By default, `birdog` will look for the most recent _decicive vote_ on a piece of
 However, you can also provide roll call numbers instead, to specify exactly which vote you want records for. `birdog` uses the `legislative-parser`
 script to parse both bill names and roll call numbers. You can use any string that can be parsed by that script;
 please refer to its [documentation](https://www.npmjs.com/package/legislative-parser) for more information.
+
+## Managing the cache
+
+`birdog` keeps a local cache of data on members of congress, in order to minimize API requests. The `records` command will always check for obvious changes to membership before it pulls voting records, so it will mostly stay up to date on its own. You can also run `birdog update` to download new information on every member of congress; this will take longer, but will ensure that the local data is fully up-to-date.
 
 ## Status
 
