@@ -9,11 +9,11 @@ exports.describe = 'refresh local cache of congressmembers';
 
 exports.builder = {
     force: {
-        describe: 'force a full refresh of the local cache',
+        describe: 'delete the local cache before updating',
         type: 'boolean'
     },
     congress: {
-        describe: 'congress to use when pulling members and searching for bills',
+        describe: 'congress to use when pulling members',
         type: 'number',
         nargs: 1,
         default: ProPublica.guessSession().congress,
