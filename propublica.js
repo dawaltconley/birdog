@@ -88,7 +88,7 @@ class ProPublica {
     async updateMems({ aggressive=false }={}) {
         // use cache if updated less than 24 hours ago
         const updateTime = new Date();
-        if (!aggressive && (updateTime - this.repsCache.modified < 86400000)) {
+        if (!aggressive && !this.current || (updateTime - this.repsCache.modified < 86400000)) {
             this.reps = await Promise.resolve(this.reps);
             return this.reps;
         }
@@ -118,7 +118,8 @@ class ProPublica {
         members = [].concat(...members.map(r => r.data.results[0].members));
         this.reps = this.reps.filter(rep => { // filter out any saved rep not returned by the latest members query
             const memMatch = members.find(m => m.id === rep.id && (!aggressive || m.last_updated !== rep.last_updated)); // if aggresive, update all reps whose profile has been updated
-            return memMatch && rep.roles[0].congress === congress && new Date(rep.roles[0].end_date) > updateTime; // return false if saved rep's term has expired
+            const role = rep.roles.find(r => r.congress === this.congress);
+            return memMatch && role && (!this.current || new Date(role.end_date) > updateTime); // return false if saved rep's term has expired
         });
         members = members
             .filter(m => !this.reps.find(rep => rep.id === m.id)) // only get info for reps not remaining in local data
