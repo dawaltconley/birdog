@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const yaml = require('js-yaml');
 const csv = require('csv-stringify');
 const ProPublica = require(path.join(__dirname, '..', 'propublica.js'));
 const keys = require(path.join(__dirname, '..', 'keys.js'));
@@ -8,37 +9,64 @@ exports.command = [ '$0', 'records' ];
 
 exports.describe = 'get voting records for all members of congress';
 
-exports.builder = {
-    v: {
-        alias: 'votes',
-        describe: 'pull voting records from bill or roll call numbers',
-        type: 'array',
-        default: [],
-        requiresArg: true
-    },
-    c: {
-        alias: 'cosponsors',
-        describe: 'pull cosponsors for legislation by bill number',
-        type: 'array',
-        default: [],
-        requiresArg: true
-    },
-    f: {
-        alias: 'file',
-        describe: 'file path to write records to',
-        type: 'string',
-        requiresArg: true
-    },
-    congress: {
-        describe: 'congress to use when pulling members and searching for bills',
-        type: 'number',
-        nargs: 1,
-        default: ProPublica.guessSession().congress,
-        requiresArg: true
-    }
+exports.builder = yargs => {
+    yargs.options({
+        v: {
+            alias: 'votes',
+            describe: 'pull voting records from bill or roll call numbers',
+            type: 'array',
+            default: [],
+            requiresArg: true
+        },
+        c: {
+            alias: 'cosponsors',
+            describe: 'pull cosponsors for legislation by bill number',
+            type: 'array',
+            default: [],
+            requiresArg: true
+        },
+        f: {
+            alias: 'file',
+            describe: 'file path to write records to',
+            type: 'string',
+            requiresArg: true
+        },
+        congress: {
+            describe: 'congress to use when pulling members and searching for bills',
+            type: 'number',
+            nargs: 1,
+            default: ProPublica.guessSession().congress,
+            requiresArg: true
+        }
+    })
+    .config('settings', 'Path to JSON or YAML config file', configPath => {
+        const data = fs.readFileSync(configPath);
+        try {
+            return JSON.parse(data);
+        } catch (e) {
+            try {
+                return yaml.load(data);
+            } catch (e) {
+                throw new Error(`Couldn't parse profile from ${configPath}; must be valid YAML or JSON.`);
+            }
+        }
+    })
+    .option({
+        "save-settings": {
+            describe: 'Path to save current arguments as a config file',
+            type: 'string',
+            nargs: 1,
+            requiresArg: true
+        }
+    });
 };
 
 exports.handler = async argv => {
+    if (argv.saveSettings) {
+        const save = JSON.stringify(argv, [ 'votes', 'cosponsors', 'file', 'congress' ], 4);
+        fs.writeFileSync(argv.saveSettings, save);
+    }
+
     const pp = new ProPublica({
         key: await keys.get('propublica'),
         congress: argv.congress
