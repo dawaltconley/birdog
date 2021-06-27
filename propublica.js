@@ -121,7 +121,7 @@ class ProPublica {
             const role = rep.roles.find(r => r.congress === this.congress);
             return memMatch && role && (!this.current || new Date(role.end_date) > updateTime); // return false if saved rep's term has expired
         });
-        members = members
+        members = members // may want to do something to filter out reps who are no longer in office
             .filter(m => !this.reps.find(rep => rep.id === m.id)) // only get info for reps not remaining in local data
             .map(m => this._axios.get(m.api_uri));
         if (!members.length)
