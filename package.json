@@ -1,6 +1,6 @@
 {
   "name": "birdog",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple CLI using the ProPublica database to track the voting records of members of the US Congress.",
   "main": "birdog",
   "scripts": {
