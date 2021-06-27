@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const yaml = require('js-yaml');
 const csv = require('csv-stringify');
 const ProPublica = require(path.join(__dirname, '..', 'propublica.js'));
 const keys = require(path.join(__dirname, '..', 'keys.js'));
@@ -39,18 +38,7 @@ exports.builder = yargs => {
             requiresArg: true
         }
     })
-    .config('settings', 'Path to JSON or YAML config file', configPath => {
-        const data = fs.readFileSync(configPath);
-        try {
-            return JSON.parse(data);
-        } catch (e) {
-            try {
-                return yaml.load(data);
-            } catch (e) {
-                throw new Error(`Couldn't parse profile from ${configPath}; must be valid YAML or JSON.`);
-            }
-        }
-    })
+    .config('settings')
     .option({
         "save-settings": {
             describe: 'Path to save current arguments as a config file',
