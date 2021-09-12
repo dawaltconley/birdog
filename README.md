@@ -30,10 +30,10 @@ So the above command pulls voting records for the original 2002 AUMF from the 10
 and [H.R.256](https://www.congress.gov/bill/117th-congress/house-bill/256), the most recent House bill to repeal the 2002 AUMF.
 
 This command will also pull a list of cosponsors for [S.J.Res.10](https://www.congress.gov/bill/117th-congress/senate-joint-resolution/10),
-the current Senate bill to repeal the 2002 AUMF, which has not been voted on yet. It will output a csv of those records to stdout, together with info about congressmembers'
+the current Senate bill to repeal the 2002 AUMF, which has not been voted on yet. It will output a csv of those records to stdout, together with info about representatives'
 districts and committee appointments. You can use the `-f` or `--file` option to output to a file instead.
 
-By default, `birdog` will look for the most recent _decicive vote_ on a piece of legislation; i.e. a vote to pass or a vote to table.
+By default, `birdog` will look for the most recent _decisive vote_ on a piece of legislation; i.e. a vote to pass or a vote to table.
 However, you can also provide roll call numbers instead, to specify exactly which vote you want records for. `birdog` uses the `legislative-parser`
 script to parse both bill names and roll call numbers. You can use any string that can be parsed by that script;
 please refer to its [documentation](https://www.npmjs.com/package/legislative-parser) for more information.
