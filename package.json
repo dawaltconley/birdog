@@ -17,7 +17,7 @@
     "yargs": "^17.0.1"
   },
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^8.15.0"
   },
   "engineStrict": true,
   "engines": {
