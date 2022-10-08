@@ -3,7 +3,7 @@ const path = require('path');
 const app = require(path.join(__dirname, 'package.json')).name;
 const axios = require('axios');
 const parseLeg = require('legislative-parser');
-const { limitAsync } = require('./utilities');
+const maxAsync = require('@dawaltconley/max-async');
 
 const chambers = [ 'house', 'senate' ];
 const legTypes = [ 'bill', 'simple resolution', 'joint resolution', 'concurrent resolution' ];
@@ -129,7 +129,7 @@ class ProPublica {
             return this.reps;
 
         // update member data; cache and return updated data
-        members = await limitAsync(members, 50); // undocumented rate limit, need to limit request batches: https://github.com/propublica/congress-api-docs/issues/276
+        members = await maxAsync(members, 50); // undocumented rate limit, need to limit request batches: https://github.com/propublica/congress-api-docs/issues/276
         this.reps = this.reps.concat(...members.map(m => m.data.results[0]));
         await this.repsCache.write(this.reps); // write data to cache, while keeping in memory... maybe a better way since I don't actually need to wait for this to complete; can be done in background
         return this.reps;
