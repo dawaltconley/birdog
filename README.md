@@ -45,3 +45,9 @@ please refer to its [documentation](https://www.npmjs.com/package/legislative-pa
 ## Status
 
 This is a very experimental version, published for testing. I may add more features and the entire API is subject to change.
+
+### To-dos
+
+- Convert to Typescript, probably using & contributing to the unofficial [ProPublica SDK](https://github.com/njgingrich/propublica-congress-sdk)
+- Add unit tests
+- Allow adding the results of a query directly to a shared database, i.e. Airtable or Google Sheets. Having a regularly-updated sheet is pretty important for legislative campaigns.
