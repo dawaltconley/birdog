@@ -60,13 +60,12 @@ class ProPublica {
 
         let current = ProPublica.guessSession();
 
-        if (congress) {
-            this.congress = congress;
-            this.session = session || 1;
-        } else {
-            Object.assign(this, current);
-        }
+        this.congress = congress || current.congress;
+        this.session = congress && congress !== current.congress // if another congress has been specified, do not guess the session
+            ? session
+            : current.session;
         this.current = current.congress === this.congress && current.session === this.session;
+
         this.repsCache = new Cache(this.congress, 'members.json');
         this.reps = this.repsCache.read().then(r => r || []);
         this._retries = 0;
@@ -162,6 +161,12 @@ class ProPublica {
         const leg = isString(ref) ? parseLeg(ref.trim()) : ref;
         const congress = leg.congress || this.congress;
         const session = leg.session || this.session;
+
+        if (leg.type === 'Vote' && !session) {
+            // only possible if calling this method directly; the CLI will always specify a session
+            throw new Error('Unknown session: you must specify a session of congress to query votes by roll call.');
+        }
+
         if (legTypes.includes(leg.type.toLowerCase())) {
             const decidingVotes = [];
             let bill = await this._axios.get(`/${congress}/bills/${leg.id}.json`);
