@@ -67,7 +67,7 @@ class ProPublica {
         this.current = current.congress === this.congress && current.session === this.session;
 
         this.repsCache = new Cache(this.congress, 'members.json');
-        this.reps = this.repsCache.read().then(r => r || []);
+        this.reps = this.repsCache.read();
         this._retries = 0;
 
         this.updateMems = this.updateMems.bind(this);
@@ -88,9 +88,17 @@ class ProPublica {
     async updateMems({ aggressive=false }={}) {
         // use cache if updated less than 24 hours ago
         const updateTime = new Date();
-        if (!aggressive && !this.current || (updateTime - this.repsCache.modified < 86400000)) {
-            this.reps = await Promise.resolve(this.reps);
-            return this.reps;
+
+        // assuming we are not force-updating the cache (aggressive)
+        // defer to cache if it is less than a day old
+        // OR if the requested congress/session is older then the current one
+        // i.e. its members are not going to change
+        if (!aggressive && !this.current || updateTime - this.repsCache.modified < 86400000) {
+            let reps = await Promise.resolve(this.reps);
+            if (reps && reps.length) {
+                this.reps = reps;
+                return reps;
+            }
         }
 
         // if cache is old, fetch latest member data from ProPublica
@@ -114,7 +122,7 @@ class ProPublica {
         }
 
         // identify which members need updating
-        this.reps = await Promise.resolve(this.reps);
+        this.reps = await this.reps || [];
         members = [].concat(...members.map(r => r.data.results[0].members));
         this.reps = this.reps.filter(rep => { // filter out any saved rep not returned by the latest members query
             const memMatch = members.find(m => m.id === rep.id && (!aggressive || m.last_updated !== rep.last_updated)); // if aggresive, update all reps whose profile has been updated
