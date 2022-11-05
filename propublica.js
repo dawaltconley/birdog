@@ -46,7 +46,12 @@ class Cache {
     }
 
     delete() {
-        return fs.promises.unlink(this.path);
+        return fs.promises.unlink(this.path)
+            .catch(e => {
+                if (e.code !== 'ENOENT')
+                    throw e;
+                return null;
+            });
     }
 }
 
