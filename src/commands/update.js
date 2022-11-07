@@ -1,7 +1,5 @@
-const fs = require('fs');
-const path = require('path');
-const ProPublica = require(path.join(__dirname, '..', 'propublica.js'));
-const keys = require(path.join(__dirname, '..', 'keys.js'));
+const ProPublica = require('../propublica');
+const keys = require('../keys');
 
 exports.command = 'update';
 

@@ -1,5 +1,4 @@
-const path = require('path');
-const keys = require(path.join(__dirname, '..', 'keys.js'));
+const keys = require('../keys');
 
 exports.command = 'config';
 

@@ -1,7 +1,6 @@
 const { whisper } = require('@dawaltconley/cue');
 const keytar = require('keytar');
-const path = require('path');
-const app = require(path.resolve(__dirname, '..', 'package.json')).name;
+const app = require('../package.json').name;
 
 const keys = {
     propublica: {

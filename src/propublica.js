@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const app = require(path.resolve(__dirname, '..', 'package.json')).name;
+const app = require('../package.json').name;
 const axios = require('axios');
 const parseLeg = require('legislative-parser');
 const maxAsync = require('@dawaltconley/max-async');

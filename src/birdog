@@ -21,11 +21,10 @@
  * - *if* it can narrow the ammount of queries made, various fields to filter members
  */
 
-const path = require('path');
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 
 yargs(hideBin(process.argv))
     .alias('help', 'h')
-    .commandDir(path.join(__dirname, 'commands'))
+    .commandDir('commands')
     .argv;
