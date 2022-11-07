@@ -135,6 +135,7 @@ class ProPublica {
     )
     try {
       members = await Promise.all(members)
+      members = [].concat(...members.map(r => r.data.results[0].members))
     } catch (e) {
       if (e.errors === 'The congress is not valid' && this.current) {
         // attempt to id current congress if guessed value is invalid
@@ -156,25 +157,26 @@ class ProPublica {
 
     // identify which cached members need updating
     this.reps = (await this.reps) || []
-    members = [].concat(...members.map(r => r.data.results[0].members))
     this.reps = this.reps.filter(rep => {
       // filter out any saved rep not returned by the latest members query
       // if aggresive, update all reps whose profile has been updated
-      const memMatch = members.find(
+
+      // TODO there is some discrepancy between last_updated on the members API and individual member profiles
+      // should handle this somehow?
+      const memMatch = members.some(
         m =>
           m.id === rep.id &&
-          (!aggressive || m.last_updated !== rep.last_updated)
+          (!aggressive || m.last_updated === rep.last_updated)
       )
-      const role = rep.roles.find(r => r.congress === this.congress)
-      // return false if current congress and cached rep's term has expired
-      return (
-        memMatch &&
-        role &&
-        (!this.current || new Date(role.end_date) > updateTime)
-      )
+      const role = rep.roles.find(r => r.congress === this.congress.toString())
+
+      // TODO this may be unnecessary; mostly filters out ppl who have left
+      const isActive = !this.current || new Date(role.end_date) > updateTime
+
+      return memMatch && role && isActive
     })
     members = members // may want to do something to filter out reps who are no longer in office
-      .filter(m => !this.reps.find(rep => rep.id === m.id)) // only get info for reps not remaining in local data
+      .filter(m => !this.reps.some(rep => rep.id === m.id)) // only get info for reps not remaining in local data
       .map(m => this._axios.get.bind(this._axios, m.api_uri))
     if (!members.length) return this.reps
 
