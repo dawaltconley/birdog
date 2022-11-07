@@ -1,14 +1,11 @@
+root: true
 env:
   browser: false
   commonjs: true
-  es6: true
   node: true
-extends: 'eslint:recommended'
-globals:
-  Atomics: readonly
-  SharedArrayBuffer: readonly
-parserOptions:
-  ecmaVersion: 2018
+extends:
+  - 'eslint:recommended'
+  - 'plugin:node/recommended'
+  - 'prettier'
 rules:
   no-unused-vars: warn
-  semi: warn

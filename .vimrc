@@ -1,4 +1,4 @@
-set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+let g:ale_fix_on_save = 1
 
 let g:coc_disable_startup_warning = 1
 

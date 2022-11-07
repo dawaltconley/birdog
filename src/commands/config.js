@@ -1,9 +1,9 @@
-const keys = require('../keys');
+const keys = require('../keys')
 
-exports.command = 'config';
+exports.command = 'config'
 
-exports.describe = 'set up using API keys';
+exports.describe = 'set up using API keys'
 
-exports.builder = {};
+exports.builder = {}
 
-exports.handler = () => keys.prompt('propublica');
+exports.handler = () => keys.prompt('propublica')
