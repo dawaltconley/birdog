@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const app = require(path.join(__dirname, 'package.json')).name;
+const app = require(path.resolve(__dirname, '..', 'package.json')).name;
 const axios = require('axios');
 const parseLeg = require('legislative-parser');
 const maxAsync = require('@dawaltconley/max-async');
@@ -12,7 +12,7 @@ const isString = obj => typeof obj === 'string' || obj instanceof String;
 
 class Cache {
     constructor(...filePath) {
-        this.path = path.join(__dirname, '.cache', app, ...filePath.map(p => p.toString()));
+        this.path = path.resolve(__dirname, '..', '.cache', app, ...filePath.map(p => p.toString()));
         if (!this.modified)
             fs.mkdirSync(path.dirname(this.path), { recursive: true });
 
