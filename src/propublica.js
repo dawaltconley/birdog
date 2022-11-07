@@ -119,8 +119,8 @@ class ProPublica {
     // i.e. its members are not going to change
     const updateTime = new Date()
     if (
-      (!aggressive && !this.current) ||
-      updateTime - this.repsCache.modified < 86400000
+      !aggressive &&
+      (!this.current || updateTime - this.repsCache.modified < 86400000)
     ) {
       let reps = await Promise.resolve(this.reps)
       if (reps && reps.length) {
