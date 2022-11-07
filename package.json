@@ -7,7 +7,7 @@
     "./src/**"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest"
   },
   "author": "Dylan Awalt-Conley",
   "license": "ISC",
@@ -23,7 +23,9 @@
   "devDependencies": {
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^27.1.4",
     "eslint-plugin-node": "^11.1.0",
+    "jest": "^29.3.0",
     "prettier": "^2.7.1"
   },
   "engineStrict": true,

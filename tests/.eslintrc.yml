@@ -1,0 +1,13 @@
+env:
+  browser: false
+  commonjs: true
+  node: true
+plugins:
+  - 'eslint-plugin-jest'
+extends:
+  - 'eslint:recommended'
+  - 'plugin:node/recommended'
+  - 'plugin:jest/recommended'
+  - 'prettier'
+rules:
+  no-unused-vars: warn
