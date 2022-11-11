@@ -35,4 +35,13 @@ describe('records', () => {
       return expect(output).toEqual(expected)
     }, 20000)
   })
+  describe('gets correct votes from past roll calls', () => {
+    test('roll calls from different congresses', async () => {
+      const [output, expected] = await Promise.all([
+        runCommand('--congress', 116, '-v', 'h.1.464', 'S.1.195-115'),
+        getSample('aumf_roll-call'),
+      ])
+      return expect(output).toEqual(expected)
+    })
+  })
 })
