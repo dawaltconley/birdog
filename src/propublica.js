@@ -232,7 +232,6 @@ class ProPublica {
     }
 
     if (legTypes.includes(leg.type.toLowerCase())) {
-      const decidingVotes = []
       let bill = await this._axios.get(`/${congress}/bills/${leg.id}.json`)
       bill = bill.data.results[0]
       // warn and exit if bill has not been voted on
@@ -240,12 +239,13 @@ class ProPublica {
         console.warn(`The bill ${bill.number} has not been voted on.`)
         return []
       }
+      const decidingVotes = []
       for (const vote of bill.votes) {
-        const isDecidingVote = getDecidingVote(bill.bill_type).includes(
-          vote.question
-        )
-        if (isDecidingVote) decidingVotes.push(this._axios.get(vote.api_url))
+        const questions = getDecidingQuestions(bill.bill_type, vote.chamber)
+        if (questions.includes(vote.question))
+          decidingVotes.push(this._axios.get(vote.api_url))
       }
+
       // warn and exit if bill has been voted on, but no votes are decisive.
       if (!decidingVotes.length) {
         console.warn(`Couldn't identify a decisive vote for ${bill.number}.`)
@@ -270,31 +270,41 @@ class ProPublica {
   }
 }
 
-const getDecidingVote = type => {
-  switch (type) {
-    case 'hr':
-    // fall through
-    case 'hjres':
+const getDecidingQuestions = (type, chamber) => {
+  const bills = ['hr', 's']
+  const joint = ['hjres', 'sjres']
+  const concurrent = ['hconres', 'sconres']
+  const simple = ['hres', 'sres']
+  if (chamber === 'House') {
+    if ([...bills, ...joint].includes(type)) {
       return ['On Passage', 'On Motion to Suspend the Rules and Pass']
-    case 'hconres':
-    // fall through
-    case 'hres':
+    } else if ([...concurrent, ...simple].includes(type)) {
       return [
         'On Agreeing to the Resolution',
         'On Motion to Suspend the Rules and Agree',
       ]
-    case 's':
+    } else {
+      throw new Error(
+        `Bad legislation type ${type}, could not get question for deciding vote.`
+      )
+    }
+  } else if (chamber === 'Senate') {
+    if (bills.includes(type)) {
       return ['On Passage of the Bill']
-    case 'sjres':
+    } else if (joint.includes(type)) {
       return ['On the Joint Resolution']
-    case 'sconres':
+    } else if (concurrent.includes(type)) {
       return ['On the Concurrent Resolution']
-    case 'sres':
+    } else if (simple.includes(type)) {
       return ['On the Resolution']
+    } else {
+      throw new Error(
+        `Bad legislation type ${type}, could not get question for deciding vote.`
+      )
+    }
+  } else {
+    throw new Error(`Unknown chamber ${chamber}`)
   }
-  throw new Error(
-    `Bad legislation type ${type}, could not get question for deciding vote.`
-  )
 }
 
 module.exports = ProPublica

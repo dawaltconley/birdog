@@ -447,108 +447,108 @@ OR-1,Rep. David Wu,D,House,,,davidwu2010,,84.94,15.47,,No
 MD-4,Rep. Albert Russell Wynn,D,House,,,,,93.52,7.01,,Yes
 FL-10,Rep. C. W. Bill Young,R,House,,,,,97.17,3.38,Yes,Yes
 AK-At-Large,Rep. Don Young,R,House,,,RepDonYoung,,96.75,3.75,Yes,Yes
-HI,Sen. Daniel K. Akaka,D,Senate,,,SenatorAkaka,,95.53,4.47,,
-CO,Sen. Wayne A. Allard,R,Senate,,,,,93.25,6.75,,
-VA,Sen. George Felix Allen,R,Senate,,,,,93.11,6.89,,
+HI,Sen. Daniel K. Akaka,D,Senate,,,SenatorAkaka,,95.53,4.47,,No
+CO,Sen. Wayne A. Allard,R,Senate,,,,,93.25,6.75,,Yes
+VA,Sen. George Felix Allen,R,Senate,,,,,93.11,6.89,,Yes
 MN,Sen. Dean Barkley,I,Senate,,,,,64.29,35.71,,
-MT,Sen. Max Baucus,D,Senate,,,,,81.12,18.88,,
-IN,Sen. Evan Bayh,D,Senate,,,,,86.82,13.18,,
-UT,Sen. Robert F. Bennett,R,Senate,,,,,95.73,4.27,,
-DE,Sen. Joseph R. Biden Jr.,D,Senate,,,,,93.91,6.09,,
-NM,Sen. Jeff Bingaman,D,Senate,,,jeffbingaman,,91.46,8.54,,
-MO,Sen. Christopher S. Bond,R,Senate,,,,,93.62,6.38,,
-CA,Sen. Barbara Boxer,D,Senate,,,SenatorBoxer,,92.35,7.65,,
-LA,Sen. John B. Breaux,D,Senate,,,,,77.16,22.84,,
-KS,Sen. Sam Brownback,R,Senate,,,SenSamBrownback,,92.66,7.34,,
-KY,Sen. Jim Bunning,R,Senate,,,,,94.31,5.69,,
-MT,Sen. Conrad Burns,R,Senate,,,,,94.58,5.42,,
-WV,Sen. Robert C. Byrd,D,Senate,,,,,87.76,12.24,,
-CO,Sen. Ben Nighthorse Campbell,R,Senate,,,,,90.86,9.14,,
-WA,Sen. Maria Cantwell,D,Senate,https://www.cantwell.senate.gov,,SenatorCantwell,,93.4,6.6,,
-MO,Sen. Jean Carnahan,D,Senate,,,,,90.23,9.77,,
-DE,Sen. Thomas R. Carper,D,Senate,https://www.carper.senate.gov/public,,SenatorCarper,,87.7,12.3,,
-RI,Sen. Lincoln D. Chafee,R,Senate,,,,,70.86,29.14,,
-GA,Sen. Max Cleland,D,Senate,,,,,85.46,14.54,,
-NY,Sen. Hillary Rodham Clinton,D,Senate,,,,,94.82,5.18,,
-MS,Sen. Thad Cochran,R,Senate,,,SenThadCochran,,91.05,8.95,,
-ME,Sen. Susan Collins,R,Senate,https://www.collins.senate.gov,,SenatorCollins,,78.86,21.14,,
-ND,Sen. Kent Conrad,D,Senate,,,,,92.41,7.59,,
+MT,Sen. Max Baucus,D,Senate,,,,,81.12,18.88,,Yes
+IN,Sen. Evan Bayh,D,Senate,,,,,86.82,13.18,,Yes
+UT,Sen. Robert F. Bennett,R,Senate,,,,,95.73,4.27,,Yes
+DE,Sen. Joseph R. Biden Jr.,D,Senate,,,,,93.91,6.09,,Yes
+NM,Sen. Jeff Bingaman,D,Senate,,,jeffbingaman,,91.46,8.54,,No
+MO,Sen. Christopher S. Bond,R,Senate,,,,,93.62,6.38,,Yes
+CA,Sen. Barbara Boxer,D,Senate,,,SenatorBoxer,,92.35,7.65,,No
+LA,Sen. John B. Breaux,D,Senate,,,,,77.16,22.84,,Yes
+KS,Sen. Sam Brownback,R,Senate,,,SenSamBrownback,,92.66,7.34,,Yes
+KY,Sen. Jim Bunning,R,Senate,,,,,94.31,5.69,,Yes
+MT,Sen. Conrad Burns,R,Senate,,,,,94.58,5.42,,Yes
+WV,Sen. Robert C. Byrd,D,Senate,,,,,87.76,12.24,,No
+CO,Sen. Ben Nighthorse Campbell,R,Senate,,,,,90.86,9.14,,Yes
+WA,Sen. Maria Cantwell,D,Senate,https://www.cantwell.senate.gov,,SenatorCantwell,,93.4,6.6,,Yes
+MO,Sen. Jean Carnahan,D,Senate,,,,,90.23,9.77,,Yes
+DE,Sen. Thomas R. Carper,D,Senate,https://www.carper.senate.gov/public,,SenatorCarper,,87.7,12.3,,Yes
+RI,Sen. Lincoln D. Chafee,R,Senate,,,,,70.86,29.14,,No
+GA,Sen. Max Cleland,D,Senate,,,,,85.46,14.54,,Yes
+NY,Sen. Hillary Rodham Clinton,D,Senate,,,,,94.82,5.18,,Yes
+MS,Sen. Thad Cochran,R,Senate,,,SenThadCochran,,91.05,8.95,,Yes
+ME,Sen. Susan Collins,R,Senate,https://www.collins.senate.gov,,SenatorCollins,,78.86,21.14,,Yes
+ND,Sen. Kent Conrad,D,Senate,,,,,92.41,7.59,,No
 TX,Sen. John Cornyn,R,Senate,https://www.cornyn.senate.gov,,JohnCornyn,,0,0,,
-NJ,Sen. Jon Stevens Corzine,D,Senate,,,,,91.83,8.17,,
-ID,Sen. Larry E. Craig,R,Senate,,,,,95.45,4.55,,
-ID,Sen. Michael D. Crapo,R,Senate,https://www.crapo.senate.gov,,MikeCrapo,,95.31,4.69,,
-SD,Sen. Thomas A. Daschle,D,Senate,,,,,95.39,4.61,,
-MN,Sen. Mark Dayton,D,Senate,,,,,93.93,6.07,,
-OH,Sen. Michael DeWine,R,Senate,,,,,90.26,9.74,,
-CT,Sen. Christopher J. Dodd,D,Senate,,,SenChrisDodd,,94.99,5.01,,
-NM,Sen. Pete V. Domenici,R,Senate,,,,,94.34,5.66,,
-ND,Sen. Byron L. Dorgan,D,Senate,,,,,94.32,5.68,,
-IL,Sen. Richard J. Durbin,D,Senate,https://www.durbin.senate.gov,,SenatorDurbin,,93.67,6.33,,
-NC,Sen. John Reid Edwards,D,Senate,,,,,93.72,6.28,,
-NV,Sen. John Ensign,R,Senate,,,SenEnsign,,87.91,12.09,,
-WY,Sen. Michael B. Enzi,R,Senate,,,SenatorEnzi,,92.59,7.41,,
-WI,Sen. Russ Feingold,D,Senate,,,russfeingold,,82.18,17.82,,
-CA,Sen. Dianne Feinstein,D,Senate,https://www.feinstein.senate.gov,,SenFeinstein,,89.9,10.1,,
-IL,Sen. Peter G. Fitzgerald,R,Senate,,,,,81.56,18.44,,
-TN,Sen. William H. Frist,R,Senate,,,,,96.43,3.57,,
-FL,Sen. Bob Graham,D,Senate,,,,,91.64,8.36,,
-TX,Sen. Phil Gramm,R,Senate,,,,,90.05,9.95,,
-IA,Sen. Charles E. Grassley,R,Senate,https://www.grassley.senate.gov,,ChuckGrassley,,93,7,,
-NH,Sen. Judd Gregg,R,Senate,,,,,90.18,9.82,,
-NE,Sen. Chuck T. Hagel,R,Senate,,,,,93.56,6.44,,
-IA,Sen. Tom Harkin,D,Senate,,,SenatorHarkin,,94.58,5.42,,
-UT,Sen. Orrin G. Hatch,R,Senate,,,SenOrrinHatch,,95.59,4.41,,
-NC,Sen. Jesse Helms,R,Senate,,,,,93.02,6.98,,
-SC,Sen. Ernest F. Hollings,D,Senate,,,,,92.6,7.4,,
-AR,Sen. Tim Hutchinson,R,Senate,,,,,90.68,9.32,,
-TX,Sen. Kay Bailey Hutchison,R,Senate,,,kaybaileyhutch,,90.89,9.11,,
-OK,Sen. James M. Inhofe,R,Senate,https://www.inhofe.senate.gov,,InhofePress,,94.03,5.97,,
-HI,Sen. Daniel K. Inouye,D,Senate,,,daniel_inouye,,94.49,5.51,,
-VT,Sen. James M. Jeffords,I,Senate,,,,,89.74,10.26,,
-VT,Sen. James M. Jeffords,I,Senate,,,,,89.74,10.26,,
-SD,Sen. Tim Johnson,D,Senate,,,SenJohnsonSD,,92.37,7.63,,
-MA,Sen. Edward M. Kennedy,D,Senate,,,,,93.61,6.39,,
-MA,Sen. John Kerry,D,Senate,,,,,95.7,4.3,,
-WI,Sen. Herb Kohl,D,Senate,,,,,92.28,7.72,,
-AZ,Sen. Jon Kyl,R,Senate,,,senjonkyl,,89.41,10.59,,
-LA,Sen. Mary L. Landrieu,D,Senate,,,SenLandrieu,,86.18,13.82,,
-VT,Sen. Patrick J. Leahy,D,Senate,https://www.leahy.senate.gov,,SenatorLeahy,,95.45,4.55,,
-MI,Sen. Carl Levin,D,Senate,,,SenCarlLevin,,95.35,4.65,,
-CT,Sen. Joseph I. Lieberman,D,Senate,,,JoeLieberman,,93.46,6.54,,
-AR,Sen. Blanche Lincoln,D,Senate,,,,,85.11,14.89,,
-MS,Sen. Trent Lott,R,Senate,,,,,94.82,5.18,,
-IN,Sen. Richard G. Lugar,R,Senate,,,senatorlugar,,92.69,7.31,,
-AZ,Sen. John McCain,R,Senate,,,SenJohnMcCain,,76.17,23.83,,
-KY,Sen. Mitch McConnell,R,Senate,https://www.mcconnell.senate.gov,,McConnellPress,,97.11,2.89,,
-MD,Sen. Barbara A. Mikulski,D,Senate,,,SenatorBarb,,96.74,3.26,,
-GA,Sen. Zell Bryan Miller,D,Senate,,,,,67.52,32.48,,
-AK,Sen. Frank H. Murkowski,R,Senate,,,,,95.01,4.99,,
+NJ,Sen. Jon Stevens Corzine,D,Senate,,,,,91.83,8.17,,No
+ID,Sen. Larry E. Craig,R,Senate,,,,,95.45,4.55,,Yes
+ID,Sen. Michael D. Crapo,R,Senate,https://www.crapo.senate.gov,,MikeCrapo,,95.31,4.69,,Yes
+SD,Sen. Thomas A. Daschle,D,Senate,,,,,95.39,4.61,,Yes
+MN,Sen. Mark Dayton,D,Senate,,,,,93.93,6.07,,No
+OH,Sen. Michael DeWine,R,Senate,,,,,90.26,9.74,,Yes
+CT,Sen. Christopher J. Dodd,D,Senate,,,SenChrisDodd,,94.99,5.01,,Yes
+NM,Sen. Pete V. Domenici,R,Senate,,,,,94.34,5.66,,Yes
+ND,Sen. Byron L. Dorgan,D,Senate,,,,,94.32,5.68,,Yes
+IL,Sen. Richard J. Durbin,D,Senate,https://www.durbin.senate.gov,,SenatorDurbin,,93.67,6.33,,No
+NC,Sen. John Reid Edwards,D,Senate,,,,,93.72,6.28,,Yes
+NV,Sen. John Ensign,R,Senate,,,SenEnsign,,87.91,12.09,,Yes
+WY,Sen. Michael B. Enzi,R,Senate,,,SenatorEnzi,,92.59,7.41,,Yes
+WI,Sen. Russ Feingold,D,Senate,,,russfeingold,,82.18,17.82,,No
+CA,Sen. Dianne Feinstein,D,Senate,https://www.feinstein.senate.gov,,SenFeinstein,,89.9,10.1,,Yes
+IL,Sen. Peter G. Fitzgerald,R,Senate,,,,,81.56,18.44,,Yes
+TN,Sen. William H. Frist,R,Senate,,,,,96.43,3.57,,Yes
+FL,Sen. Bob Graham,D,Senate,,,,,91.64,8.36,,No
+TX,Sen. Phil Gramm,R,Senate,,,,,90.05,9.95,,Yes
+IA,Sen. Charles E. Grassley,R,Senate,https://www.grassley.senate.gov,,ChuckGrassley,,93,7,,Yes
+NH,Sen. Judd Gregg,R,Senate,,,,,90.18,9.82,,Yes
+NE,Sen. Chuck T. Hagel,R,Senate,,,,,93.56,6.44,,Yes
+IA,Sen. Tom Harkin,D,Senate,,,SenatorHarkin,,94.58,5.42,,Yes
+UT,Sen. Orrin G. Hatch,R,Senate,,,SenOrrinHatch,,95.59,4.41,,Yes
+NC,Sen. Jesse Helms,R,Senate,,,,,93.02,6.98,,Yes
+SC,Sen. Ernest F. Hollings,D,Senate,,,,,92.6,7.4,,Yes
+AR,Sen. Tim Hutchinson,R,Senate,,,,,90.68,9.32,,Yes
+TX,Sen. Kay Bailey Hutchison,R,Senate,,,kaybaileyhutch,,90.89,9.11,,Yes
+OK,Sen. James M. Inhofe,R,Senate,https://www.inhofe.senate.gov,,InhofePress,,94.03,5.97,,Yes
+HI,Sen. Daniel K. Inouye,D,Senate,,,daniel_inouye,,94.49,5.51,,No
+VT,Sen. James M. Jeffords,I,Senate,,,,,89.74,10.26,,No
+VT,Sen. James M. Jeffords,I,Senate,,,,,89.74,10.26,,No
+SD,Sen. Tim Johnson,D,Senate,,,SenJohnsonSD,,92.37,7.63,,Yes
+MA,Sen. Edward M. Kennedy,D,Senate,,,,,93.61,6.39,,No
+MA,Sen. John Kerry,D,Senate,,,,,95.7,4.3,,Yes
+WI,Sen. Herb Kohl,D,Senate,,,,,92.28,7.72,,Yes
+AZ,Sen. Jon Kyl,R,Senate,,,senjonkyl,,89.41,10.59,,Yes
+LA,Sen. Mary L. Landrieu,D,Senate,,,SenLandrieu,,86.18,13.82,,Yes
+VT,Sen. Patrick J. Leahy,D,Senate,https://www.leahy.senate.gov,,SenatorLeahy,,95.45,4.55,,No
+MI,Sen. Carl Levin,D,Senate,,,SenCarlLevin,,95.35,4.65,,No
+CT,Sen. Joseph I. Lieberman,D,Senate,,,JoeLieberman,,93.46,6.54,,Yes
+AR,Sen. Blanche Lincoln,D,Senate,,,,,85.11,14.89,,Yes
+MS,Sen. Trent Lott,R,Senate,,,,,94.82,5.18,,Yes
+IN,Sen. Richard G. Lugar,R,Senate,,,senatorlugar,,92.69,7.31,,Yes
+AZ,Sen. John McCain,R,Senate,,,SenJohnMcCain,,76.17,23.83,,Yes
+KY,Sen. Mitch McConnell,R,Senate,https://www.mcconnell.senate.gov,,McConnellPress,,97.11,2.89,,Yes
+MD,Sen. Barbara A. Mikulski,D,Senate,,,SenatorBarb,,96.74,3.26,,No
+GA,Sen. Zell Bryan Miller,D,Senate,,,,,67.52,32.48,,Yes
+AK,Sen. Frank H. Murkowski,R,Senate,,,,,95.01,4.99,,Yes
 AK,Sen. Lisa Murkowski,R,Senate,https://www.murkowski.senate.gov,,LisaMurkowski,,0,0,,
-WA,Sen. Patty Murray,D,Senate,https://www.murray.senate.gov,,PattyMurray,,93.01,6.99,,
-FL,Sen. Bill Nelson,D,Senate,,,SenBillNelson,,91.11,8.89,,
-NE,Sen. Ben Nelson,D,Senate,,,SenBenNelson,,76.34,23.66,,
-OK,Sen. Don Nickles,R,Senate,,,,,92.41,7.59,,
-RI,Sen. Jack Reed,D,Senate,https://www.reed.senate.gov,,SenJackReed,,94.68,5.32,,
-NV,Sen. Harry Reid,D,Senate,,,SenatorReid,,95.99,4.01,,
-KS,Sen. Pat Roberts,R,Senate,,,SenPatRoberts,,95.11,4.89,,
-WV,Sen. John D. Rockefeller IV,D,Senate,,,SenRockefeller,,94.97,5.03,,
-PA,Sen. Richard J. Santorum,R,Senate,,,,,93.98,6.02,,
-MD,Sen. Paul S. Sarbanes,D,Senate,,,,,95.65,4.35,,
-NY,Sen. Charles E. Schumer,D,Senate,https://www.schumer.senate.gov,,SenSchumer,,93.3,6.7,,
-AL,Sen. Jeff Sessions,R,Senate,,,SenatorSessions,,90.55,9.45,,
-AL,Sen. Richard C. Shelby,R,Senate,https://www.shelby.senate.gov,,SenShelby,,89.94,10.06,,
-NH,Sen. Bob Smith,R,Senate,,,,,89.47,10.53,,
-OR,Sen. Gordon Harold Smith,R,Senate,,,,,85.46,14.54,,
-ME,Sen. Olympia J. Snowe,R,Senate,,,SenatorSnowe,,77.42,22.58,,
-PA,Sen. Arlen Specter,R,Senate,,,SenArlenSpecter,,76.09,23.91,,
-MI,Sen. Debbie Stabenow,D,Senate,https://www.stabenow.senate.gov,,SenStabenow,,95.18,4.82,,
-AK,Sen. Ted F. Stevens,R,Senate,,,,,92.57,7.43,,
+WA,Sen. Patty Murray,D,Senate,https://www.murray.senate.gov,,PattyMurray,,93.01,6.99,,No
+FL,Sen. Bill Nelson,D,Senate,,,SenBillNelson,,91.11,8.89,,Yes
+NE,Sen. Ben Nelson,D,Senate,,,SenBenNelson,,76.34,23.66,,Yes
+OK,Sen. Don Nickles,R,Senate,,,,,92.41,7.59,,Yes
+RI,Sen. Jack Reed,D,Senate,https://www.reed.senate.gov,,SenJackReed,,94.68,5.32,,No
+NV,Sen. Harry Reid,D,Senate,,,SenatorReid,,95.99,4.01,,Yes
+KS,Sen. Pat Roberts,R,Senate,,,SenPatRoberts,,95.11,4.89,,Yes
+WV,Sen. John D. Rockefeller IV,D,Senate,,,SenRockefeller,,94.97,5.03,,Yes
+PA,Sen. Richard J. Santorum,R,Senate,,,,,93.98,6.02,,Yes
+MD,Sen. Paul S. Sarbanes,D,Senate,,,,,95.65,4.35,,No
+NY,Sen. Charles E. Schumer,D,Senate,https://www.schumer.senate.gov,,SenSchumer,,93.3,6.7,,Yes
+AL,Sen. Jeff Sessions,R,Senate,,,SenatorSessions,,90.55,9.45,,Yes
+AL,Sen. Richard C. Shelby,R,Senate,https://www.shelby.senate.gov,,SenShelby,,89.94,10.06,,Yes
+NH,Sen. Bob Smith,R,Senate,,,,,89.47,10.53,,Yes
+OR,Sen. Gordon Harold Smith,R,Senate,,,,,85.46,14.54,,Yes
+ME,Sen. Olympia J. Snowe,R,Senate,,,SenatorSnowe,,77.42,22.58,,Yes
+PA,Sen. Arlen Specter,R,Senate,,,SenArlenSpecter,,76.09,23.91,,Yes
+MI,Sen. Debbie Stabenow,D,Senate,https://www.stabenow.senate.gov,,SenStabenow,,95.18,4.82,,No
+AK,Sen. Ted F. Stevens,R,Senate,,,,,92.57,7.43,,Yes
 MO,Sen. James M. Talent,R,Senate,,,,,0,0,,
-WY,Sen. Craig Thomas,R,Senate,,,,,93.72,6.28,,
-TN,Sen. Fred Thompson,R,Senate,,,,,90.64,9.36,,
-SC,Sen. Strom Thurmond,R,Senate,,,,,93.68,6.32,,
-NJ,Sen. Robert G. Torricelli,D,Senate,,,,,89.24,10.76,,
-OH,Sen. George V. Voinovich,R,Senate,,,,,89.59,10.41,,
-VA,Sen. John W. Warner,R,Senate,,,,,89.64,10.36,,
-MN,Sen. Paul D. Wellstone,D,Senate,,,,,93.87,6.13,,
-OR,Sen. Ron Wyden,D,Senate,https://www.wyden.senate.gov,,RonWyden,,91,9,,
+WY,Sen. Craig Thomas,R,Senate,,,,,93.72,6.28,,Yes
+TN,Sen. Fred Thompson,R,Senate,,,,,90.64,9.36,,Yes
+SC,Sen. Strom Thurmond,R,Senate,,,,,93.68,6.32,,Yes
+NJ,Sen. Robert G. Torricelli,D,Senate,,,,,89.24,10.76,,Yes
+OH,Sen. George V. Voinovich,R,Senate,,,,,89.59,10.41,,Yes
+VA,Sen. John W. Warner,R,Senate,,,,,89.64,10.36,,Yes
+MN,Sen. Paul D. Wellstone,D,Senate,,,,,93.87,6.13,,No
+OR,Sen. Ron Wyden,D,Senate,https://www.wyden.senate.gov,,RonWyden,,91,9,,No

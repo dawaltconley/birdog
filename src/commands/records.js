@@ -50,6 +50,18 @@ exports.builder = yargs => {
     })
 }
 
+const getVoteHeader = v => {
+  let voteItem
+  if (v.amendment && v.amendment.number && v.bill && v.bill.number) {
+    voteItem = `${v.amendment.number} to ${v.bill.number}, "${v.bill.short_title}"`
+  } else if (v.bill && v.bill.number) {
+    voteItem = `${v.bill.number}, "${v.bill.short_title}"`
+  } else {
+    throw new Error('Unrecognized type of vote: ' + v.url)
+  }
+  return `Vote on ${voteItem}`
+}
+
 exports.handler = async argv => {
   if (argv.saveSettings) {
     const save = JSON.stringify(
@@ -71,9 +83,18 @@ exports.handler = async argv => {
 
   ;[reps, cosponsors, votes] = await Promise.all([
     reps,
-    Promise.all(cosponsors).then(r => r.flat()),
-    Promise.all(votes).then(r => r.flat()),
+    Promise.all(cosponsors),
+    Promise.all(votes),
   ])
+
+  cosponsors = cosponsors.flat()
+  votes = votes.reduce((columns, vote) => {
+    if (!vote.length) return columns
+    // votes are in reverse chron, so this will be the first item voted on
+    const header = getVoteHeader(vote[vote.length - 1])
+    const positions = [].concat(...vote.map(v => v.positions))
+    return columns.concat({ header, positions })
+  }, [])
 
   const columns = [
     'District',
@@ -87,17 +108,7 @@ exports.handler = async argv => {
     'Votes with party',
     'Votes against party',
     ...cosponsors.map(bill => `Cosponsor of ${bill.number}, "${bill.title}"`),
-    ...votes.map(v => {
-      let voteItem
-      if (v.amendment && v.amendment.number && v.bill && v.bill.number) {
-        voteItem = `${v.amendment.number} to ${v.bill.number}, "${v.bill.short_title}"`
-      } else if (v.bill && v.bill.number) {
-        voteItem = `${v.bill.number}, "${v.bill.short_title}"`
-      } else {
-        throw new Error('Unrecognized type of vote: ' + v.url)
-      }
-      return `Vote on ${voteItem}`
-    }),
+    ...votes.map(v => v.header),
   ]
 
   const stringifier = csv({
