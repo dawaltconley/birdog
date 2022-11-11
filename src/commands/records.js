@@ -81,6 +81,7 @@ exports.handler = async argv => {
   let cosponsors = argv.cosponsors.map(ref => pp.getCosponsors(ref))
   let votes = argv.votes.map(ref => pp.getVote(ref))
 
+  // TODO rate limit just in case
   ;[reps, cosponsors, votes] = await Promise.all([
     reps,
     Promise.all(cosponsors),
