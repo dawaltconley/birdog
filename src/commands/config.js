@@ -1,9 +1,11 @@
-const keys = require('../keys')
+import keys from '../keys.js'
 
-exports.command = 'config'
+const command = 'config'
 
-exports.describe = 'set up using API keys'
+const describe = 'set up using API keys'
 
-exports.builder = {}
+const builder = {}
 
-exports.handler = () => keys.prompt('propublica')
+const handler = () => keys.prompt('propublica')
+
+export default { command, describe, builder, handler }

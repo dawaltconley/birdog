@@ -1,12 +1,12 @@
-const { whisper } = require('@dawaltconley/cue')
-const keytar = require('keytar')
-const app = require('../package.json').name
+import { whisper } from '@dawaltconley/cue'
+import keytar from 'keytar'
+import appName from './package-name.js'
 
 const keys = {
   propublica: {
     service: 'api.propublica.org',
     name: 'ProPublica API Key:',
-    error: `${app} requires a ProPublica API key; you can request one from https://www.propublica.org/datastore/api/propublica-congress-api`,
+    error: `${appName} requires a ProPublica API key; you can request one from https://www.propublica.org/datastore/api/propublica-congress-api`,
   },
 }
 
@@ -14,7 +14,7 @@ const promptKey = async k => {
   let { service, name, error } = keys[k]
   let key = await whisper(name)
   if (!key) throw new Error(error)
-  return await keytar.setPassword(service, app, key)
+  return await keytar.setPassword(service, appName, key)
 }
 
 const getKey = async k => {
@@ -27,7 +27,7 @@ const getKey = async k => {
   return key
 }
 
-module.exports = {
+export default {
   get: getKey,
   prompt: promptKey,
 }

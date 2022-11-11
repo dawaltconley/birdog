@@ -1,9 +1,12 @@
-const fs = require('fs')
-const path = require('path')
-const app = require('../package.json').name
-const axios = require('axios')
-const parseLeg = require('legislative-parser')
-const maxAsync = require('@dawaltconley/max-async')
+import fs from 'node:fs'
+import path from 'node:path'
+import url from 'node:url'
+import axios from 'axios'
+import parseLeg from 'legislative-parser'
+import maxAsync from '@dawaltconley/max-async'
+import appName from './package-name.js'
+
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
 const chambers = ['house', 'senate']
 const legTypes = [
@@ -21,7 +24,7 @@ class Cache {
       __dirname,
       '..',
       '.cache',
-      app,
+      appName,
       ...filePath.map(p => p.toString())
     )
     if (!this.modified)
@@ -67,7 +70,7 @@ class ProPublica {
   constructor({ key, congress, session } = {}) {
     if (!key)
       throw new Error(
-        `Missing required config option 'key'. Must provide a valid ProPublica API key when configuring ${app}.`
+        `Missing required config option 'key'. Must provide a valid ProPublica API key when configuring ${appName}.`
       )
     this._axios = axios.create({
       baseURL: 'https://api.propublica.org/congress/v1',
@@ -307,4 +310,4 @@ const getDecidingQuestions = (type, chamber) => {
   }
 }
 
-module.exports = ProPublica
+export default ProPublica

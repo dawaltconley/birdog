@@ -1,13 +1,13 @@
-const fs = require('fs')
-const csv = require('csv-stringify')
-const ProPublica = require('../propublica')
-const keys = require('../keys')
+import fs from 'node:fs'
+import csv from 'csv-stringify'
+import ProPublica from '../propublica.js'
+import keys from '../keys.js'
 
-exports.command = ['$0', 'records']
+const command = ['$0', 'records']
 
-exports.describe = 'get voting records for all members of congress'
+const describe = 'get voting records for all members of congress'
 
-exports.builder = yargs => {
+const builder = yargs => {
   yargs
     .options({
       v: {
@@ -62,7 +62,7 @@ const getVoteHeader = v => {
   return `Vote on ${voteItem}`
 }
 
-exports.handler = async argv => {
+const handler = async argv => {
   if (argv.saveSettings) {
     const save = JSON.stringify(
       argv,
@@ -176,3 +176,5 @@ exports.handler = async argv => {
     resolve()
   })
 }
+
+export default { command, describe, builder, handler }

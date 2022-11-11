@@ -1,11 +1,23 @@
 root: true
 env:
-  browser: false
-  commonjs: true
+  es2021: true
   node: true
+parserOptions:
+  sourceType: module
+  ecmaVersion: 2021
 extends:
   - 'eslint:recommended'
-  - 'plugin:node/recommended'
+  - 'plugin:node/recommended-module'
+  - 'plugin:import/recommended'
   - 'prettier'
+overrides:
+  - files: 'tests/**/*.test.js'
+    parserOptions:
+      sourceType: script
+    extends:
+      - 'eslint:recommended'
+      - 'plugin:node/recommended-script'
+      - 'plugin:jest/recommended'
+      - 'prettier'
 rules:
   no-unused-vars: warn

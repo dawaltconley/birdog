@@ -1,11 +1,11 @@
-const ProPublica = require('../propublica')
-const keys = require('../keys')
+import ProPublica from '../propublica.js'
+import keys from '../keys.js'
 
-exports.command = 'update'
+const command = 'update'
 
-exports.describe = 'refresh local cache of congressmembers'
+const describe = 'refresh local cache of congressmembers'
 
-exports.builder = {
+const builder = {
   force: {
     describe: 'delete the local cache before updating',
     type: 'boolean',
@@ -19,7 +19,7 @@ exports.builder = {
   },
 }
 
-exports.handler = async argv => {
+const handler = async argv => {
   const pp = new ProPublica({
     key: await keys.get('propublica'),
     congress: argv.congress,
@@ -28,3 +28,5 @@ exports.handler = async argv => {
   console.log('updating')
   return pp.updateMems({ aggressive: true })
 }
+
+export default { command, describe, builder, handler }

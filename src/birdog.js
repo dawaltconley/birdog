@@ -21,10 +21,16 @@
  * - *if* it can narrow the ammount of queries made, various fields to filter members
  */
 
-const yargs = require('yargs/yargs');
-const { hideBin } = require('yargs/helpers');
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
+import { config, records, update } from './commands/index.js'
+import appName from './package-name.js'
+
+process.title = appName
 
 yargs(hideBin(process.argv))
-    .alias('help', 'h')
-    .commandDir('commands')
-    .argv;
+  .scriptName(appName)
+  .alias('help', 'h')
+  .command(config)
+  .command(records)
+  .command(update).argv

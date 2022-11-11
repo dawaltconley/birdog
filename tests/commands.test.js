@@ -10,7 +10,7 @@ const getSample = sample =>
 const runCommand = (...args) =>
   new Promise((resolve, reject) => {
     let output = Buffer.from('')
-    const source = path.resolve(__dirname, '..', 'src', 'birdog')
+    const source = path.resolve(__dirname, '..', 'src', 'birdog.js')
     const cmd = spawn(source, args)
     cmd.stdout.on('data', data => {
       output = Buffer.concat([output, data])
