@@ -89,11 +89,21 @@ exports.handler = async argv => {
 
   cosponsors = cosponsors.flat()
   votes = votes.reduce((columns, vote) => {
-    if (!vote.length) return columns
-    // votes are in reverse chron, so this will be the first item voted on
-    const header = getVoteHeader(vote[vote.length - 1])
-    const positions = [].concat(...vote.map(v => v.positions))
-    return columns.concat({ header, positions })
+    if (vote.length === 2 && vote[0].chamber !== vote[1].chamber) {
+      // combine votes from different chambers on the same bill
+      return columns.concat({
+        header: getVoteHeader(vote[1]), // use earliest vote,
+        positions: vote[0].positions.concat(vote[1].positions),
+      })
+    } else {
+      // fallback to separate columns if it's not clear how votes should be combined
+      return columns.concat(
+        vote.map(vote => ({
+          header: getVoteHeader(vote),
+          positions: vote.positions,
+        }))
+      )
+    }
   }, [])
 
   const columns = [
