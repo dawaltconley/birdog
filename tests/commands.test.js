@@ -3,7 +3,9 @@ const path = require('path')
 const { spawn } = require('child_process')
 
 const getSample = sample =>
-  fsp.readFile(path.join(__dirname, 'samples', sample + '.csv'))
+  fsp
+    .readFile(path.join(__dirname, 'samples', sample + '.csv'))
+    .then(data => data.toString())
 
 const runCommand = (...args) =>
   new Promise((resolve, reject) => {
@@ -15,7 +17,7 @@ const runCommand = (...args) =>
     })
     cmd.stderr.on('data', data => console.error(data.toString()))
     cmd.on('error', e => reject(e))
-    cmd.on('close', () => resolve(output))
+    cmd.on('close', () => resolve(output.toString()))
   })
 
 describe('records', () => {
