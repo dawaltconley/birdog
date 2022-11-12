@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "test": "npx jest",
-    "prepublishOnly": "npm test"
+    "prepublishOnly": "npm test",
+    "package": "npx caxa --input src --output dist/birdog src/birdog.js"
   },
   "author": "Dylan Awalt-Conley",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "yargs": "^17.0.1"
   },
   "devDependencies": {
+    "caxa": "^3.0.1",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
