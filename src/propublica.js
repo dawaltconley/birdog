@@ -73,6 +73,22 @@ class ProPublica {
       baseURL: 'https://api.propublica.org/congress/v1',
       headers: { 'X-API-Key': key },
     })
+    this._axios.interceptors.response.use(
+      response => {
+        if (response.data.status === 'ERROR') {
+          const errorMsg = response.data.errors.reduce((msg, e) => {
+            if (msg) msg += '\n  '
+            msg += e.error
+            return msg
+          }, '')
+          throw new Error(
+            `Error querying ${response.request.path}: ${errorMsg}`
+          )
+        }
+        return response
+      },
+      error => Promise.reject(error)
+    )
 
     let current = ProPublica.guessSession()
 
