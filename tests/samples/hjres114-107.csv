@@ -1,18 +1,18 @@
 District,Representative,Party,Chamber,Website,Phone,Twitter,Committees,Votes with party,Votes against party,"Cosponsor of H.J.RES.114, ""To authorize the use of United States Armed Forces against Iraq.""","Vote on H.J.RES.114, ""Authorization for Use of Military Force Against Iraq Resolution of 2002"""
 HI-1,Rep. Neil Abercrombie,D,House,,,neilabercrombie,,89.22,11.31,,No
-PR-At-Large,R.C. An Acevedo-Vila,D,House,,,,,0,,,
 NY-5,Rep. Gary L. Ackerman,D,House,,,repgaryackerman,,94.59,5.98,Yes,Yes
 AL-4,Rep. Robert B. Aderholt,R,House,https://aderholt.house.gov,,Robert_Aderholt,,91.42,9.1,,Yes
-MO-2,Rep. Todd Akin,R,House,,,reptoddakin,,94.35,6.16,Yes,Yes
-ME-1,Rep. Thomas H. Allen,D,House,,,,,95.78,4.75,,No
+HI,Sen. Daniel K. Akaka,D,Senate,,,SenatorAkaka,,95.53,4.47,,No
+CO,Sen. Wayne A. Allard,R,Senate,,,,,93.25,6.75,,Yes
+VA,Sen. George Felix Allen,R,Senate,,,,,93.11,6.89,,Yes
 NJ-1,Rep. Robert E. Andrews,D,House,,,RepAndrews,,93.37,7.16,Yes,Yes
 TX-26,Rep. Richard K. Armey,R,House,,,,,97.48,3.04,Yes,Yes
-CA-42,Rep. Joe Baca,D,House,,,,,95.43,5.09,,No
+ME-1,Rep. Thomas H. Allen,D,House,,,,,95.78,4.75,,No
+MO-2,Rep. Todd Akin,R,House,,,reptoddakin,,94.35,6.16,Yes,Yes
+PR-At-Large,R.C. An Acevedo-Vila,D,House,,,,,0,,,
 AL-6,Rep. Spencer Bachus,R,House,,,BachusAL06,,98.04,2.51,Yes,Yes
-WA-3,Rep. Brian Baird,D,House,,,,,88.35,12.07,,No
 LA-6,Rep. Richard Hugh Baker,R,House,,,,,97.96,2.58,,Yes
 ME-2,Rep. John Baldacci,D,House,,,,,95.92,4.61,,No
-WI-2,Rep. Tammy Baldwin,D,House,https://www.baldwin.senate.gov,,SenatorBaldwin,,90.61,9.92,,No
 NC-10,Rep. Cass Ballenger,R,House,,,,,97.35,3.08,Yes,Yes
 MI-5,Rep. James A. Barcia,D,House,,,,,85.47,15.06,,Yes
 GA-7,Rep. Bob Barr,R,House,,,,,92.96,7.37,,Yes
@@ -20,120 +20,164 @@ WI-5,Rep. Thomas M. Barrett,D,House,,,,,94.03,6.51,,No
 MD-6,Rep. Roscoe G. Bartlett,R,House,,,,,92.59,7.92,,Yes
 TX-6,Rep. Joe L. Barton,R,House,,,RepJoeBarton,,96.62,3.81,Yes,Yes
 NH-2,Rep. Charles F. Bass,R,House,,,RepCharlesBass,,92.47,8.04,,Yes
+MT,Sen. Max Baucus,D,Senate,,,,,81.12,18.88,,Yes
 CA-30,Rep. Xavier Becerra,D,House,,,RepBecerra,,96.18,4.29,,No
+UT,Sen. Robert F. Bennett,R,Senate,,,,,95.73,4.27,,Yes
 TX-25,Rep. Ken Bentsen,D,House,,,,,92.55,7.98,,Yes
 NE-1,Rep. Douglas K. Bereuter,R,House,,,,,93.92,6.6,,Yes
-NV-1,Rep. Shelley Berkley,D,House,,,repberkley,,92.92,7.6,,Yes
 CA-26,Rep. Howard L. Berman,D,House,,,RepHowardBerman,,95.74,4.71,Yes,Yes
 AR-1,Rep. Marion Berry,D,House,,,,,83.01,17.4,,Yes
-IL-13,Rep. Judy Biggert,R,House,,,JudyBiggert,,95.28,5.23,Yes,Yes
+DE,Sen. Joseph R. Biden Jr.,D,Senate,,,,,93.91,6.09,,Yes
 FL-9,Rep. Michael Bilirakis,R,House,,,,,96.44,4.09,,Yes
+NM,Sen. Jeff Bingaman,D,Senate,,,jeffbingaman,,91.46,8.54,,No
 GA-2,Rep. Sanford D. Bishop Jr.,D,House,https://bishop.house.gov,,SanfordBishop,,89.26,11.28,,Yes
 IL-5,Rep. Rod Blagojevich,D,House,,,,,92.55,7.98,,Yes
 OR-3,Rep. Earl Blumenauer,D,House,https://blumenauer.house.gov,,BlumenauerMedia,,91.41,9.01,,No
 MO-7,Rep. Roy Blunt,R,House,https://www.blunt.senate.gov,,RoyBlunt,,97.83,2.6,Yes,Yes
 NY-23,Rep. Sherwood L. Boehlert,R,House,,,,,91.09,9.43,,Yes
 OH-8,Rep. John A. Boehner,R,House,,,SpeakerBoehner,,98.39,2.15,Yes,Yes
+MO,Sen. Christopher S. Bond,R,Senate,,,,,93.62,6.38,,Yes
 TX-23,Rep. Henry Bonilla,R,House,,,,,97.4,3.01,,Yes
 MI-10,Rep. David E. Bonior,D,House,,,,,89.86,10.63,,No
-CA-44,Rep. Mary Bono Mack,R,House,,,Rep_BonoMack,,95.28,5.15,,Yes
-AR-3,Rep. John Boozman,R,House,https://www.boozman.senate.gov/public,,JohnBoozman,,97.55,2.64,Yes,Yes
 PA-3,Rep. Robert A. Borski,D,House,,,,,88.07,12.49,,Yes
 IA-3,Rep. Leonard L. Boswell,D,House,,,LeonardBoswell,,90.23,10.29,,Yes
 VA-9,Rep. Rick Boucher,D,House,,,,,91.01,9.53,,Yes
+CA,Sen. Barbara Boxer,D,Senate,,,SenatorBoxer,,92.35,7.65,,No
 FL-2,Rep. Allen Boyd,D,House,,,,,86.51,14.02,,Yes
 TX-8,Rep. Kevin Brady,R,House,https://kevinbrady.house.gov,,RepKevinBrady,,97.24,3.29,Yes,Yes
-PA-1,Rep. Robert A. Brady,D,House,,,RepBrady,,88.27,12.27,,No
+LA,Sen. John B. Breaux,D,Senate,,,,,77.16,22.84,,Yes
 FL-3,Rep. Corrine Brown,D,House,,,RepCorrineBrown,,94.96,5.6,,No
 OH-13,Rep. Sherrod Brown,D,House,https://www.brown.senate.gov,,SenSherrodBrown,,92.83,7.68,,No
-SC-1,Rep. Henry E. Brown Jr.,R,House,,,,,97.94,2.57,Yes,Yes
+KS,Sen. Sam Brownback,R,Senate,,,SenSamBrownback,,92.66,7.34,,Yes
 TN-7,Rep. Ed Bryant,R,House,,,,,97.43,3.1,,Yes
+KY,Sen. Jim Bunning,R,Senate,,,,,94.31,5.69,,Yes
+MT,Sen. Conrad Burns,R,Senate,,,,,94.58,5.42,,Yes
 NC-5,Rep. Richard M. Burr,R,House,https://www.burr.senate.gov,,SenatorBurr,,96.86,3.56,,Yes
 IN-6,Rep. Dan Burton,R,House,,,RepDanBurton,,96.1,4.41,Yes,Yes
 IN-5,Rep. Steve Buyer,R,House,,,,,98.56,1.99,Yes,Yes
+WV,Sen. Robert C. Byrd,D,Senate,,,,,87.76,12.24,,No
+PA-1,Rep. Robert A. Brady,D,House,,,RepBrady,,88.27,12.27,,No
+CA-44,Rep. Mary Bono Mack,R,House,,,Rep_BonoMack,,95.28,5.15,,Yes
+WA-3,Rep. Brian Baird,D,House,,,,,88.35,12.07,,No
+WI-2,Rep. Tammy Baldwin,D,House,https://www.baldwin.senate.gov,,SenatorBaldwin,,90.61,9.92,,No
+NV-1,Rep. Shelley Berkley,D,House,,,repberkley,,92.92,7.6,,Yes
+IL-13,Rep. Judy Biggert,R,House,,,JudyBiggert,,95.28,5.23,Yes,Yes
+IN,Sen. Evan Bayh,D,Senate,,,,,86.82,13.18,,Yes
+CA-42,Rep. Joe Baca,D,House,,,,,95.43,5.09,,No
+SC-1,Rep. Henry E. Brown Jr.,R,House,,,,,97.94,2.57,Yes,Yes
+AR-3,Rep. John Boozman,R,House,https://www.boozman.senate.gov/public,,JohnBoozman,,97.55,2.64,Yes,Yes
+MN,Sen. Dean Barkley,I,Senate,,,,,64.29,35.71,,
 AL-1,Rep. Sonny Callahan,R,House,,,,,97.99,2.49,Yes,Yes
 CA-43,Rep. Ken Calvert,R,House,https://calvert.house.gov,,KenCalvert,,98.41,2.12,Yes,Yes
 MI-4,Rep. Dave Camp,R,House,,,RepDaveCamp,,97.83,2.69,,Yes
+CO,Sen. Ben Nighthorse Campbell,R,Senate,,,,,90.86,9.14,,Yes
 UT-3,Rep. Christopher B. Cannon,R,House,,,,,96.59,3.98,Yes,Yes
-VA-7,Rep. Eric Cantor,R,House,,,,,97.32,3.2,Yes,Yes
-WV-2,Rep. Shelley Moore Capito,R,House,https://www.capito.senate.gov,,SenCapito,,95.08,5.44,,Yes
-CA-22,Rep. Lois Capps,D,House,,,RepLoisCapps,,95.43,5.09,,No
-MA-8,Rep. Michael E. Capuano,D,House,,,RepMikeCapuano,,85.71,14.81,,No
+WA,Sen. Maria Cantwell,D,Senate,https://www.cantwell.senate.gov,,SenatorCantwell,,93.4,6.6,,Yes
 MD-3,Rep. Benjamin L. Cardin,D,House,https://www.cardin.senate.gov,,SenatorCardin,,95.03,5.49,,No
+DE,Sen. Thomas R. Carper,D,Senate,https://www.carper.senate.gov/public,,SenatorCarper,,87.7,12.3,,Yes
 IN-10,Rep. Julia M. Carson,D,House,,,,,94.88,5.57,,No
-OK-2,Rep. Brad Carson,D,House,,,,,85.73,14.69,,Yes
 DE-At-Large,Rep. Michael N. Castle,R,House,,,repmikecastle,,90.08,10.43,,Yes
 OH-1,Rep. Steven J. Chabot,R,House,https://chabot.house.gov,,RepSteveChabot,,93.42,7.09,,Yes
 GA-8,Rep. Saxby Chambliss,R,House,,,SaxbyChambliss,,98.63,1.89,Yes,Yes
 VI-At-Large,Del. Donna M.C. Christensen,D,House,,,DelegateDonna,,0,,,
-MO-1,Rep. William Lacy Clay,D,House,,,,,92.73,7.84,,No
 NC-1,Rep. Eva Clayton,D,House,,,,,95.12,5.42,,No
 TN-5,Rep. Bob Clement,D,House,,,,,88.34,12.23,,Yes
 SC-6,Rep. James E. Clyburn,D,House,https://clyburn.house.gov,,WhipClyburn,,93.87,6.65,,No
 NC-6,Rep. Howard Coble,R,House,,,HowardCoble,,92.52,7.99,,Yes
+MS,Sen. Thad Cochran,R,Senate,,,SenThadCochran,,91.05,8.95,,Yes
 GA-3,Rep. Michael Allen Collins,R,House,,,,,94.17,6.36,Yes,Yes
 TX-19,Rep. Larry Combest,R,House,,,,,97.44,3.11,Yes,Yes
 CA-18,Rep. Gary Condit,D,House,,,,,84.6,15.96,,No
+ND,Sen. Kent Conrad,D,Senate,,,,,92.41,7.59,,No
 MI-14,Rep. John Conyers Jr.,D,House,,,RepJohnConyers,,86.87,13.6,,No
 LA-5,Rep. John Cooksey,R,House,,,,,98.7,1.89,,Yes
 IL-12,Rep. Jerry F. Costello,D,House,,,jerrycostello,,80.9,19.52,,No
 CA-47,Rep. Christopher Cox,R,House,,,,,95.14,5.32,Yes,Yes
 PA-14,Rep. William J. Coyne,D,House,,,,,96.27,4.28,,No
+ID,Sen. Larry E. Craig,R,Senate,,,,,95.45,4.55,,Yes
 AL-5,Rep. Robert E. Cramer,D,House,,,,,81.67,18.86,Yes,Yes
 IL-8,Rep. Philip M. Crane,R,House,,,,,89.31,11.25,,Yes
-FL-4,Rep. Ander Crenshaw,R,House,,,AnderCrenshaw,,98.88,1.64,Yes,Yes
-NY-7,Rep. Joseph Crowley,D,House,,,RepJoeCrowley,,93.82,6.71,,Yes
+ID,Sen. Michael D. Crapo,R,Senate,https://www.crapo.senate.gov,,MikeCrapo,,95.31,4.69,,Yes
 WY-At-Large,Rep. Barbara L. Cubin,R,House,,,,,96.36,4.2,Yes,Yes
-TX-7,Rep. John Culberson,R,House,,,CongCulberson,,95.72,4.81,Yes,Yes
 MD-7,Rep. Elijah E. Cummings,D,House,,,RepCummings,,95.44,5.09,,No
 CA-51,Rep. Randy 'Duke' Cunningham,R,House,,,,,97.5,3.02,Yes,Yes
+GA,Sen. Max Cleland,D,Senate,,,,,85.46,14.54,,Yes
+ME,Sen. Susan Collins,R,Senate,https://www.collins.senate.gov,,SenatorCollins,,78.86,21.14,,Yes
+CA-22,Rep. Lois Capps,D,House,,,RepLoisCapps,,95.43,5.09,,No
+MA-8,Rep. Michael E. Capuano,D,House,,,RepMikeCapuano,,85.71,14.81,,No
+NY-7,Rep. Joseph Crowley,D,House,,,RepJoeCrowley,,93.82,6.71,,Yes
+RI,Sen. Lincoln D. Chafee,R,Senate,,,,,70.86,29.14,,No
+NY,Sen. Hillary Rodham Clinton,D,Senate,,,,,94.82,5.18,,Yes
+NJ,Sen. Jon Stevens Corzine,D,Senate,,,,,91.83,8.17,,No
+MO,Sen. Jean Carnahan,D,Senate,,,,,90.23,9.77,,Yes
+OK-2,Rep. Brad Carson,D,House,,,,,85.73,14.69,,Yes
+FL-4,Rep. Ander Crenshaw,R,House,,,AnderCrenshaw,,98.88,1.64,Yes,Yes
+VA-7,Rep. Eric Cantor,R,House,,,,,97.32,3.2,Yes,Yes
+WV-2,Rep. Shelley Moore Capito,R,House,https://www.capito.senate.gov,,SenCapito,,95.08,5.44,,Yes
+TX-7,Rep. John Culberson,R,House,,,CongCulberson,,95.72,4.81,Yes,Yes
+MO-1,Rep. William Lacy Clay,D,House,,,,,92.73,7.84,,No
+TX,Sen. John Cornyn,R,Senate,https://www.cornyn.senate.gov,,JohnCornyn,,0,0,,
+SD,Sen. Thomas A. Daschle,D,Senate,,,,,95.39,4.61,,Yes
 IL-7,Rep. Danny K. Davis,D,House,https://davis.house.gov,,RepDannyDavis,,94.77,5.77,,No
 FL-11,Rep. James Davis,D,House,,,,,91.92,8.5,,Yes
 VA-11,Rep. Thomas M. Davis,R,House,,,,,94.57,5.85,Yes,Yes
-VA-1,Rep. Jo Ann S. Davis,R,House,,,,,94.15,6.26,Yes,Yes
-CA-49,Rep. Susan A. Davis,D,House,,,RepSusanDavis,,94.75,5.77,,No
 GA-9,Rep. Nathan Deal,R,House,,,,,96.33,4.21,,Yes
 OR-4,Rep. Peter A. DeFazio,D,House,https://defazio.house.gov,,RepPeterDeFazio,,82.58,17.85,,No
 CO-1,Rep. Diana DeGette,D,House,https://degette.house.gov,,RepDianaDeGette,,93.47,6.96,,No
 MA-10,Rep. Bill Delahunt,D,House,,,,,92.67,7.88,,No
 CT-3,Rep. Rosa DeLauro,D,House,https://delauro.house.gov,,RosaDeLauro,,97.32,3.2,,No
 TX-22,Rep. Thomas Dale DeLay,R,House,,,,,97.12,3.2,Yes,Yes
-SC-4,Rep. Jim DeMint,R,House,,,JimDeMint,,95.66,4.86,Yes,Yes
 FL-20,Rep. Peter Deutsch,D,House,,,,,92.65,7.89,Yes,Yes
+OH,Sen. Michael DeWine,R,Senate,,,,,90.26,9.74,,Yes
 FL-21,Rep. Lincoln Diaz-Balart,R,House,,,,,96.96,3.59,,Yes
 WA-6,Rep. Norman D. Dicks,D,House,,,RepNormDicks,,92.03,8.39,,Yes
 MI-16,Rep. John D. Dingell,D,House,,,John_Dingell,,92.11,8.43,,No
+CT,Sen. Christopher J. Dodd,D,Senate,,,SenChrisDodd,,94.99,5.01,,Yes
 TX-10,Rep. Lloyd Doggett,D,House,https://doggett.house.gov,,RepLloydDoggett,,89.99,10.53,,No
+NM,Sen. Pete V. Domenici,R,Senate,,,,,94.34,5.66,,Yes
 CA-20,Rep. Calvin M. Dooley,D,House,,,,,85.87,14.46,Yes,Yes
 CA-4,Rep. John T. Doolittle,R,House,,,,,95.91,4.63,Yes,Yes
+ND,Sen. Byron L. Dorgan,D,Senate,,,,,94.32,5.68,,Yes
 PA-18,Rep. Mike Doyle,D,House,https://doyle.house.gov,,USRepMikeDoyle,,93.2,7.23,,No
 CA-28,Rep. David Dreier,R,House,,,,,96.8,3.71,Yes,Yes
 TN-2,Rep. John J. Duncan Jr.,R,House,,,RepJohnDuncanJr,,89.73,10.78,,No
 WA-8,Rep. Jennifer B. Dunn,R,House,,,,,96.92,3.61,Yes,Yes
+IL,Sen. Richard J. Durbin,D,Senate,https://www.durbin.senate.gov,,SenatorDurbin,,93.67,6.33,,No
+SC-4,Rep. Jim DeMint,R,House,,,JimDeMint,,95.66,4.86,Yes,Yes
+MN,Sen. Mark Dayton,D,Senate,,,,,93.93,6.07,,No
+VA-1,Rep. Jo Ann S. Davis,R,House,,,,,94.15,6.26,Yes,Yes
+CA-49,Rep. Susan A. Davis,D,House,,,RepSusanDavis,,94.75,5.77,,No
 TX-11,Rep. Chet Edwards,D,House,,,,,88.74,11.78,Yes,Yes
 MI-3,Rep. Vernon J. Ehlers,R,House,,,,,93.22,7.3,,Yes
 MD-2,Rep. Robert L. Ehrlich,R,House,,,,,95.35,5.23,,Yes
 MO-8,Rep. Jo Ann Emerson,R,House,,,,,95.59,4.95,,Yes
 NY-17,Rep. Eliot L. Engel,D,House,,,RepEliotEngel,,95.51,5.03,,Yes
 PA-21,Rep. Phil English,R,House,,,,,89.77,10.65,,Yes
+NV,Sen. John Ensign,R,Senate,,,SenEnsign,,87.91,12.09,,Yes
 CA-14,Rep. Anna G. Eshoo,D,House,https://eshoo.house.gov,,RepAnnaEshoo,,94.89,5.64,,No
 NC-2,Rep. Bob Etheridge,D,House,,,,,91.86,8.65,,Yes
 IL-17,Rep. Lane A. Evans,D,House,,,,,94.56,5.97,,No
 AL-2,Rep. Terry Everett,R,House,,,,,96.3,4.13,Yes,Yes
+WY,Sen. Michael B. Enzi,R,Senate,,,SenatorEnzi,,92.59,7.41,,Yes
+NC,Sen. John Reid Edwards,D,Senate,,,,,93.72,6.28,,Yes
 AS-At-Large,Del. Eni F. H. Faleomavaega,D,House,,,EFaleomavaega,,0,,Yes,
 CA-17,Rep. Sam Farr,D,House,,,RepSamFarr,,95.26,5.26,,No
 PA-2,Rep. Chaka Fattah,D,House,,,ChakaFattah,,94.46,6.09,,No
-NJ-7,Rep. Michael Ferguson,R,House,,,,,93.13,7.4,Yes,Yes
+WI,Sen. Russ Feingold,D,Senate,,,russfeingold,,82.18,17.82,,No
+CA,Sen. Dianne Feinstein,D,Senate,https://www.feinstein.senate.gov,,SenFeinstein,,89.9,10.1,,Yes
 CA-50,Rep. Bob Filner,D,House,,,CongBobFilner,,83.14,17.39,,No
-AZ-1,Rep. Jeff Flake,R,House,,,JeffFlake,,82.49,18.03,Yes,Yes
-KY-6,Rep. Ernest Lee Fletcher,R,House,,,,,97.6,2.93,Yes,Yes
 FL-16,Rep. Mark Adam Foley,R,House,,,,,94.99,5.53,,Yes
-VA-4,Rep. J. Randy Forbes,R,House,,,Randy_Forbes,,97.47,3.17,,Yes
 TN-9,Rep. Harold E. Ford Jr.,D,House,,,,,92.03,8.41,Yes,Yes
-NY-13,Rep. Vito J. Fossella,R,House,,,,,94.24,6.31,Yes,Yes
 MA-4,Rep. Barney Frank,D,House,,,,,89.83,10.17,,No
 NJ-11,Rep. Rodney Frelinghuysen,R,House,,,USRepRodney,,93.85,6.67,,Yes
 TX-24,Rep. Martin Frost,D,House,,,,,92.84,7.47,Yes,Yes
+TN,Sen. William H. Frist,R,Senate,,,,,96.43,3.57,,Yes
+NY-13,Rep. Vito J. Fossella,R,House,,,,,94.24,6.31,Yes,Yes
+KY-6,Rep. Ernest Lee Fletcher,R,House,,,,,97.6,2.93,Yes,Yes
+IL,Sen. Peter G. Fitzgerald,R,Senate,,,,,81.56,18.44,,Yes
+NJ-7,Rep. Michael Ferguson,R,House,,,,,93.13,7.4,Yes,Yes
+AZ-1,Rep. Jeff Flake,R,House,,,JeffFlake,,82.49,18.03,Yes,Yes
+VA-4,Rep. J. Randy Forbes,R,House,,,Randy_Forbes,,97.47,3.17,,Yes
 CA-23,Rep. Elton Gallegly,R,House,,,eltongallegly24,,97.23,3.19,Yes,Yes
 IA-4,Rep. Greg Ganske,R,House,,,,,93.41,7.14,Yes,Yes
 PA-17,Rep. George W. Gekas,R,House,,,,,97.32,2.99,,Yes
@@ -142,44 +186,46 @@ NV-2,Rep. James A. Gibbons,R,House,,,,,96.64,3.78,Yes,Yes
 MD-1,Rep. Wayne T. Gilchrest,R,House,,,,,92.75,7.78,Yes,Yes
 OH-5,Rep. Paul E. Gillmor,R,House,,,,,95.61,4.82,Yes,Yes
 NY-20,Rep. Benjamin A. Gilman,R,House,,,,,89.44,11.09,Yes,Yes
-TX-20,Rep. Charlie Gonzalez,D,House,,,TX20CharlieG,,95.13,5.4,,No
 VA-5,Rep. Virgil H. Goode,R,House,,,,,95.54,4.46,,Yes
 VA-5,Rep. Virgil H. Goode,R,House,,,,,95.54,4.46,,Yes
 VA-6,Rep. Robert W. Goodlatte,R,House,,,RepGoodlatte,,95.67,4.84,,Yes
 TN-6,Rep. Bart Gordon,D,House,,,,,87.11,13.44,,Yes
 FL-14,Rep. Porter J. Goss,R,House,,,,,97.61,2.91,,Yes
+FL,Sen. Bob Graham,D,Senate,,,,,91.64,8.36,,No
 SC-3,Rep. Lindsey Graham,R,House,https://www.lgraham.senate.gov/public,,GrahamBlog,,94.8,5.72,Yes,Yes
+TX,Sen. Phil Gramm,R,Senate,,,,,90.05,9.95,,Yes
 TX-12,Rep. Kay Granger,R,House,https://kaygranger.house.gov,,RepKayGranger,,98.2,2.33,,Yes
-MO-6,Rep. Sam Graves,R,House,https://graves.house.gov,,RepSamGraves,,96.18,4.33,,Yes
+IA,Sen. Charles E. Grassley,R,Senate,https://www.grassley.senate.gov,,ChuckGrassley,,93,7,,Yes
 TX-29,Rep. Gene Green,D,House,,,RepGeneGreen,,90.14,10.38,,Yes
-WI-8,Rep. Mark A. Green,R,House,,,,,94.87,5.65,,Yes
 PA-8,Rep. James C. Greenwood,R,House,,,,,92.35,8.19,,Yes
-NY-1,Rep. Felix J. Grucci Jr.,R,House,,,,,95.09,5.43,Yes,Yes
+NH,Sen. Judd Gregg,R,Senate,,,,,90.18,9.82,,Yes
 IL-4,Rep. Luis V. Gutiérrez,D,House,,,RepGutierrez,,93.85,6.5,,No
 MN-1,Rep. Gilbert W. Gutknecht,R,House,,,,,89.16,11.35,,Yes
+TX-20,Rep. Charlie Gonzalez,D,House,,,TX20CharlieG,,95.13,5.4,,No
+WI-8,Rep. Mark A. Green,R,House,,,,,94.87,5.65,,Yes
+MO-6,Rep. Sam Graves,R,House,https://graves.house.gov,,RepSamGraves,,96.18,4.33,,Yes
+NY-1,Rep. Felix J. Grucci Jr.,R,House,,,,,95.09,5.43,Yes,Yes
 TX-4,Rep. Ralph M. Hall,D,House,,,RalphHallPress,,68.8,31.71,Yes,Yes
 OH-3,Rep. Tony P. Hall,D,House,,,,,89.49,11.17,,
 UT-1,Rep. James V. Hansen,R,House,,,,,97.48,2.95,Yes,Yes
+IA,Sen. Tom Harkin,D,Senate,,,SenatorHarkin,,94.58,5.42,,Yes
 CA-36,Rep. Jane Harman,D,House,,,,,91.32,9.21,,Yes
-PA-4,Rep. Melissa A. Hart,R,House,,,,,96.17,4.35,Yes,Yes
 IL-14,Rep. J. Dennis Hastert,R,House,,,,,100,0,Original,Yes
 FL-23,Rep. Alcee L. Hastings,D,House,,,RepHastingsFL,,86.57,14,,No
 WA-4,Rep. Doc Hastings,R,House,,,DocHastings,,98.62,1.91,,Yes
-NC-8,Rep. Robin C. Hayes,R,House,,,,,97.52,2.89,,Yes
+UT,Sen. Orrin G. Hatch,R,Senate,,,SenOrrinHatch,,95.59,4.41,,Yes
 AZ-6,Rep. John D. Hayworth,R,House,,,,,95.63,4.89,Yes,Yes
 CO-5,Rep. Joel Hefley,R,House,,,,,84.8,15.62,Yes,Yes
+NC,Sen. Jesse Helms,R,Senate,,,,,93.02,6.98,,Yes
 CA-2,Rep. Wally Herger,R,House,,,,,95.97,4.56,,Yes
-IN-9,Rep. Baron P. Hill,D,House,,,,,86.79,13.73,,Yes
 TN-4,Rep. Van Hilleary,R,House,,,,,93.82,6.65,Yes,Yes
 AL-7,Rep. Earl F. Hilliard,D,House,,,,,84.81,15.73,,No
 NY-26,Rep. Maurice D. Hinchey,D,House,,,mauricehinchey,,88,12.43,,No
 TX-15,Rep. Rubén Hinojosa,D,House,,,USRepRHinojosa,,94.35,6.09,,No
 OH-7,Rep. David Lee Hobson,R,House,,,,,97.63,2.88,,Yes
-PA-13,Rep. Joseph M. Hoeffel,D,House,,,,,96.05,4.47,,Yes
 MI-2,Rep. Peter Hoekstra,R,House,,,petehoekstra,,92.39,8.03,,Yes
 PA-6,Rep. Tim Holden,D,House,,,RepTimHolden,,87.33,13.19,Yes,Yes
-NJ-12,Rep. Rush Holt,D,House,,,,,89.92,10.6,,No
-CA-15,Rep. Michael M. Honda,D,House,,,RepMikeHonda,,92.06,8.46,,No
+SC,Sen. Ernest F. Hollings,D,Senate,,,,,92.6,7.4,,Yes
 OR-5,Rep. Darlene Hooley,D,House,,,,,92.71,7.72,,No
 CA-38,Rep. Stephen Horn,R,House,,,,,91.05,9.47,Yes,Yes
 IN-8,Rep. John Nathan Hostettler,R,House,,,,,88.64,11.89,,No
@@ -188,78 +234,102 @@ MD-5,Rep. Steny H. Hoyer,D,House,https://hoyer.house.gov,,LeaderHoyer,,95.79,4.7
 MO-9,Rep. Kenny C. Hulshof,R,House,,,,,93.61,6.93,,Yes
 CA-52,Rep. Duncan L. Hunter,R,House,,,,,96.09,4.34,,Yes
 AR-3,Rep. Asa Hutchinson,R,House,,,,,96.65,3.72,,
+AR,Sen. Tim Hutchinson,R,Senate,,,,,90.68,9.32,,Yes
+TX,Sen. Kay Bailey Hutchison,R,Senate,,,kaybaileyhutch,,90.89,9.11,,Yes
 IL-6,Rep. Henry John Hyde,R,House,,,,,98.31,2.11,Yes,Yes
+NE,Sen. Chuck T. Hagel,R,Senate,,,,,93.56,6.44,,Yes
+NC-8,Rep. Robin C. Hayes,R,House,,,,,97.52,2.89,,Yes
+IN-9,Rep. Baron P. Hill,D,House,,,,,86.79,13.73,,Yes
+PA-13,Rep. Joseph M. Hoeffel,D,House,,,,,96.05,4.47,,Yes
+NJ-12,Rep. Rush Holt,D,House,,,,,89.92,10.6,,No
+PA-4,Rep. Melissa A. Hart,R,House,,,,,96.17,4.35,Yes,Yes
+CA-15,Rep. Michael M. Honda,D,House,,,RepMikeHonda,,92.06,8.46,,No
+OK,Sen. James M. Inhofe,R,Senate,https://www.inhofe.senate.gov,,InhofePress,,94.03,5.97,,Yes
+HI,Sen. Daniel K. Inouye,D,Senate,,,daniel_inouye,,94.49,5.51,,No
 WA-1,Rep. Jay Inslee,D,House,,,JayInslee,,94.51,5.91,,No
-GA-6,Rep. Johnny Isakson,R,House,,,SenatorIsakson,,98.05,2.47,,Yes
-NY-2,Rep. Steve Israel,D,House,,,RepSteveIsrael,,90.44,10.08,Yes,Yes
-CA-48,Rep. Darrell Issa,R,House,https://issa.house.gov,,DarrellIssa,,97.37,3.16,Yes,Yes
 OK-5,Rep. Ernest J. Istook,R,House,,,,,96.72,3.83,,Yes
-IL-2,Rep. Jesse L. Jackson Jr.,D,House,,,RepJJJr,,92.21,8.31,,No
+GA-6,Rep. Johnny Isakson,R,House,,,SenatorIsakson,,98.05,2.47,,Yes
+CA-48,Rep. Darrell Issa,R,House,https://issa.house.gov,,DarrellIssa,,97.37,3.16,Yes,Yes
+NY-2,Rep. Steve Israel,D,House,,,RepSteveIsrael,,90.44,10.08,Yes,Yes
 TX-18,Rep. Sheila Jackson Lee,D,House,https://jacksonlee.house.gov,,JacksonLeeTX18,,93.83,6.7,,No
 LA-2,Rep. William J. Jefferson,D,House,,,,,92.26,8.3,,Yes
+VT,Sen. James M. Jeffords,I,Senate,,,,,89.74,10.26,,No
+VT,Sen. James M. Jeffords,I,Senate,,,,,89.74,10.26,,No
 TN-1,Rep. William Lewis Jenkins,R,House,,,,,97.01,3.52,Yes,Yes
 LA-7,Rep. Christopher John,D,House,,,,,81.57,18.87,,Yes
-IL-15,Rep. Timothy V. Johnson,R,House,,,RepTimJohnson,,92.72,7.79,,Yes
 TX-30,Rep. Eddie Bernice Johnson,D,House,https://ebjohnson.house.gov,,RepEBJ,,90.13,10.4,,No
 CT-6,Rep. Nancy Lee Johnson,R,House,,,,,89.05,11.37,,Yes
 TX-3,Rep. Sam Johnson,R,House,,,SamsPressShop,,94.87,5.66,Yes,Yes
-OH-11,Rep. Stephanie Tubbs Jones,D,House,,,,,90.89,9.57,,No
+SD,Sen. Tim Johnson,D,Senate,,,SenJohnsonSD,,92.37,7.63,,Yes
 NC-3,Rep. Walter B. Jones,R,House,,,RepWalterJones,,88.37,12.16,,Yes
+IL-2,Rep. Jesse L. Jackson Jr.,D,House,,,RepJJJr,,92.21,8.31,,No
+OH-11,Rep. Stephanie Tubbs Jones,D,House,,,,,90.89,9.57,,No
+IL-15,Rep. Timothy V. Johnson,R,House,,,RepTimJohnson,,92.72,7.79,,Yes
 PA-11,Rep. Paul E. Kanjorski,D,House,,,,,89.94,10.58,,Yes
 OH-9,Rep. Marcy Kaptur,D,House,https://kaptur.house.gov,,RepMarcyKaptur,,93.08,7.47,,No
-FL-8,Rep. Ric Keller,R,House,,,,,97.75,2.78,Yes,Yes
 NY-19,Rep. Sue W. Kelly,R,House,,,,,92.47,8.05,,Yes
+MA,Sen. Edward M. Kennedy,D,Senate,,,,,93.61,6.39,,No
 RI-1,Rep. Patrick J. Kennedy,D,House,,,,,94.03,6.4,,Yes
-MN-2,Rep. Mark R. Kennedy,R,House,,,,,90.97,9.56,,Yes
-IN-7,Rep. Brian D. Kerns,R,House,,,,,91.84,8.67,Yes,Yes
+MA,Sen. John Kerry,D,Senate,,,,,95.7,4.3,,Yes
 MI-9,Rep. Dale E. Kildee,D,House,,,dalekildee,,94.16,6.35,,No
 MI-15,Rep. Carolyn Cheeks Kilpatrick,D,House,,,RepKilpatrick,,94.84,5.72,,No
 WI-3,Rep. Ron Kind,D,House,https://kind.house.gov,,RepRonKind,,91.6,8.82,,Yes
 NY-3,Rep. Peter T. King,R,House,,,RepPeteKing,,96.42,4.11,,Yes
 GA-1,Rep. Jack Kingston,R,House,,,JackKingston,,96.57,3.86,Yes,Yes
-IL-10,Rep. Mark Steven Kirk,R,House,,,SenatorKirk,,93.56,6.96,Yes,Yes
 WI-4,Rep. Gerald D. Kleczka,D,House,,,,,94.79,5.74,,No
 MI-11,Rep. Joseph K. Knollenberg,R,House,,,,,98.84,1.69,Yes,Yes
+WI,Sen. Herb Kohl,D,Senate,,,,,92.28,7.72,,Yes
 AZ-5,Rep. James T. Kolbe,R,House,,,,,93.62,6.89,Yes,Yes
 OH-10,Rep. Dennis J. Kucinich,D,House,,,RepKucinich,,83.26,17.25,,No
-NY-29,Rep. John J. LaFalce,D,House,,,,,93.1,7.44,,No
-IL-18,Rep. Ray H. LaHood,R,House,,,,,95.44,5.1,,Yes
+AZ,Sen. Jon Kyl,R,Senate,,,senjonkyl,,89.41,10.59,,Yes
+MN-2,Rep. Mark R. Kennedy,R,House,,,,,90.97,9.56,,Yes
+IN-7,Rep. Brian D. Kerns,R,House,,,,,91.84,8.67,Yes,Yes
+IL-10,Rep. Mark Steven Kirk,R,House,,,SenatorKirk,,93.56,6.96,Yes,Yes
+FL-8,Rep. Ric Keller,R,House,,,,,97.75,2.78,Yes,Yes
+AR,Sen. Blanche Lincoln,D,Senate,,,,,85.11,14.89,,Yes
 TX-9,Rep. Nicholas V. Lampson,D,House,,,,,93.16,7.37,,Yes
-RI-2,Rep. Jim Langevin,D,House,https://langevin.house.gov,,JimLangevin,,93.22,7.29,,No
 CA-12,Rep. Tom Lantos,D,House,,,,,96.29,4.25,Yes,Yes
 OK-1,Rep. Steve Largent,R,House,,,,,95.51,5.31,,
-WA-2,Rep. Rick Larsen,D,House,https://larsen.house.gov,,RepRickLarsen,,86.6,13.91,,No
-CT-1,Rep. John B. Larson,D,House,https://larson.house.gov,,RepJohnLarson,,94.43,5.99,,No
 IA-5,Rep. Tom Latham,R,House,,,TomLatham,,94.7,5.82,,Yes
-OH-19,Rep. Steven C. LaTourette,R,House,,,SteveLaTourette,,94.66,5.88,,Yes
 IA-1,Rep. James A. Leach,R,House,,,,,87.9,12.63,,No
-CA-9,Rep. Barbara Lee,D,House,https://lee.house.gov,,RepBarbaraLee,,88.62,11.89,,No
+VT,Sen. Patrick J. Leahy,D,Senate,https://www.leahy.senate.gov,,SenatorLeahy,,95.45,4.55,,No
+MI,Sen. Carl Levin,D,Senate,,,SenCarlLevin,,95.35,4.65,,No
 MI-12,Rep. Sander M. Levin,D,House,,,RepSandyLevin,,97.1,3.42,,No
-KY-2,Rep. Ron Lewis,R,House,,,,,98.04,2.47,,Yes
 CA-40,Rep. Jerry Lewis,R,House,,,RepJerryLewis,,96.68,3.77,Yes,Yes
 GA-5,Rep. John Lewis,D,House,,,RepJohnLewis,,92.78,7.79,,No
+KY-2,Rep. Ron Lewis,R,House,,,,,98.04,2.47,,Yes
+CT,Sen. Joseph I. Lieberman,D,Senate,,,JoeLieberman,,93.46,6.54,,Yes
 GA-11,Rep. John Linder,R,House,,,,,98.7,1.84,Yes,Yes
 IL-3,Rep. William O. Lipinski,D,House,,,,,85.79,14.72,,No
-NJ-2,Rep. Frank A. LoBiondo,R,House,,,RepLoBiondo,,85.71,14.8,,Yes
 CA-16,Rep. Zoe Lofgren,D,House,https://lofgren.house.gov,,RepZoeLofgren,,93.05,7.48,,No
+MS,Sen. Trent Lott,R,Senate,,,,,94.82,5.18,,Yes
 NY-18,Rep. Nita M. Lowey,D,House,,,NitaLowey,,96.72,3.81,,Yes
-KY-4,Rep. Kenneth R. Lucas,D,House,,,,,75.34,25.18,Yes,Yes
 OK-6,Rep. Frank D. Lucas,R,House,https://lucas.house.gov,,RepFrankLucas,,98.23,2.28,,Yes
+IN,Sen. Richard G. Lugar,R,Senate,,,senatorlugar,,92.69,7.31,,Yes
 MN-6,Rep. Bill Luther,D,House,,,,,93.54,7,,Yes
+LA,Sen. Mary L. Landrieu,D,Senate,,,SenLandrieu,,86.18,13.82,,Yes
+CA-9,Rep. Barbara Lee,D,House,https://lee.house.gov,,RepBarbaraLee,,88.62,11.89,,No
+IL-18,Rep. Ray H. LaHood,R,House,,,,,95.44,5.1,,Yes
+OH-19,Rep. Steven C. LaTourette,R,House,,,SteveLaTourette,,94.66,5.88,,Yes
+NJ-2,Rep. Frank A. LoBiondo,R,House,,,RepLoBiondo,,85.71,14.8,,Yes
+NY-29,Rep. John J. LaFalce,D,House,,,,,93.1,7.44,,No
+CT-1,Rep. John B. Larson,D,House,https://larson.house.gov,,RepJohnLarson,,94.43,5.99,,No
+KY-4,Rep. Kenneth R. Lucas,D,House,,,,,75.34,25.18,Yes,Yes
+RI-2,Rep. Jim Langevin,D,House,https://langevin.house.gov,,JimLangevin,,93.22,7.29,,No
+WA-2,Rep. Rick Larsen,D,House,https://larsen.house.gov,,RepRickLarsen,,86.6,13.91,,No
 MA-9,Rep. Stephen F. Lynch,D,House,https://lynch.house.gov,,RepStephenLynch,,94.6,5.76,,Yes
-CT-5,Rep. James H. Maloney,D,House,,,,,89.59,10.73,,No
 NY-14,Rep. Carolyn B. Maloney,D,House,https://maloney.house.gov,,RepMaloney,,94.16,6.38,,Yes
-IL-16,Rep. Donald Manzullo,R,House,,,donmanzullo,,95,5.32,,Yes
+CT-5,Rep. James H. Maloney,D,House,,,,,89.59,10.73,,No
 MA-7,Rep. Edward J. Markey,D,House,https://www.markey.senate.gov,,SenMarkey,,92.37,8.15,,Yes
 PA-20,Rep. Frank Mascara,D,House,,,,,91.54,9.05,,Yes
-UT-2,Rep. Jim Matheson,D,House,,,RepJimMatheson,,86.1,14.42,,Yes
 CA-5,Rep. Robert T. Matsui,D,House,,,,,96.62,3.9,,No
+AZ,Sen. John McCain,R,Senate,,,SenJohnMcCain,,76.17,23.83,,Yes
 NY-4,Rep. Carolyn McCarthy,D,House,,,RepMcCarthyNY,,92.83,7.59,,Yes
+MA-3,Rep. Jim McGovern,D,House,https://mcgovern.house.gov,,RepMcGovern,,90.8,9.72,,No
 MO-5,Rep. Karen McCarthy,D,House,,,,,95.7,4.82,,No
-MN-4,Rep. Betty McCollum,D,House,https://mccollum.house.gov,,BettyMcCollum04,,96.79,3.73,,No
+KY,Sen. Mitch McConnell,R,Senate,https://www.mcconnell.senate.gov,,McConnellPress,,97.11,2.89,,Yes
 LA-4,Rep. Jim O. McCrery,R,House,,,,,98.72,1.81,Yes,Yes
 WA-7,Rep. Jim McDermott,D,House,,,RepJimMcDermott,,83.26,17.28,,No
-MA-3,Rep. Jim McGovern,D,House,https://mcgovern.house.gov,,RepMcGovern,,90.8,9.72,,No
 NY-24,Rep. John M. McHugh,R,House,,,,,95.93,4.61,Yes,Yes
 CO-3,Rep. Scott McInnis,R,House,,,,,95.75,4.8,Yes,Yes
 NC-7,Rep. Mike McIntyre,D,House,,,RepMikeMcIntyre,,86.21,14.32,,Yes
@@ -268,112 +338,122 @@ GA-4,Rep. Cynthia McKinney,D,House,,,,,88.95,11.51,,No
 NY-21,Rep. Michael R. McNulty,D,House,,,,,87.68,12.84,Yes,Yes
 MA-5,Rep. Martin T. Meehan,D,House,,,,,96.47,4.08,,Yes
 FL-17,Rep. Carrie P. Meek,D,House,,,,,93.76,6.71,,No
-NY-6,Rep. Gregory W. Meeks,D,House,https://meeks.house.gov,,RepGregoryMeeks,,94.95,5.5,,No
 NJ-13,Rep. Robert Menendez,D,House,https://www.menendez.senate.gov,,SenatorMenendez,,90.27,10.16,,No
 FL-7,Rep. John L. Mica,R,House,,,,,97.39,3.13,,Yes
+MD,Sen. Barbara A. Mikulski,D,Senate,,,SenatorBarb,,96.74,3.26,,No
 CA-37,Rep. Juanita Millender-McDonald,D,House,,,,,97.42,3.14,,No
-FL-1,Rep. Jeff Miller,R,House,,,,,94.52,5.82,Yes,Yes
 FL-13,Rep. Dan Miller,R,House,,,,,97.2,3.23,Yes,Yes
 CA-7,Rep. George Miller,D,House,,,AskGeorge,,87.33,13.23,,No
-CA-41,Rep. Gary G. Miller,R,House,,,RepGaryMiller,,97.44,2.99,Yes,Yes
 HI-2,Rep. Patsy T. Mink,D,House,,,,,91.01,9.47,,
 MA-9,Rep. Joe Moakley,D,House,,,,,95.52,4.48,,
 WV-1,Rep. Alan B. Mollohan,D,House,,,,,86.43,14.12,,No
-KS-3,Rep. Dennis Moore,D,House,,,,,84.56,15.96,,Yes
 VA-8,Rep. James P. Moran,D,House,,,Jim_Moran,,90.03,10.29,,No
 KS-1,Rep. Jerry Moran,R,House,https://www.moran.senate.gov,,JerryMoran,,89.56,10.95,,Yes
 MD-8,Rep. Constance A. Morella,R,House,,,,,81.73,18.8,,No
+AK,Sen. Frank H. Murkowski,R,Senate,,,,,95.01,4.99,,Yes
+WA,Sen. Patty Murray,D,Senate,https://www.murray.senate.gov,,PattyMurray,,93.01,6.99,,No
 PA-12,Rep. John P. Murtha,D,House,,,,,87.15,13.43,,Yes
 NC-9,Rep. Sue Myrick,R,House,,,SueMyrick,,96.11,4.41,Yes,Yes
+NY-6,Rep. Gregory W. Meeks,D,House,https://meeks.house.gov,,RepGregoryMeeks,,94.95,5.5,,No
+IL-16,Rep. Donald Manzullo,R,House,,,donmanzullo,,95,5.32,,Yes
+CA-41,Rep. Gary G. Miller,R,House,,,RepGaryMiller,,97.44,2.99,Yes,Yes
+KS-3,Rep. Dennis Moore,D,House,,,,,84.56,15.96,,Yes
+GA,Sen. Zell Bryan Miller,D,Senate,,,,,67.52,32.48,,Yes
+UT-2,Rep. Jim Matheson,D,House,,,RepJimMatheson,,86.1,14.42,,Yes
+MN-4,Rep. Betty McCollum,D,House,https://mccollum.house.gov,,BettyMcCollum04,,96.79,3.73,,No
+FL-1,Rep. Jeff Miller,R,House,,,,,94.52,5.82,Yes,Yes
+AK,Sen. Lisa Murkowski,R,Senate,https://www.murkowski.senate.gov,,LisaMurkowski,,0,0,,
 NY-8,Rep. Jerrold Nadler,D,House,https://nadler.house.gov,,RepJerryNadler,,94.64,5.92,,No
-CA-34,Rep. Grace F. Napolitano,D,House,https://napolitano.house.gov,,GraceNapolitano,,96.2,4.22,,No
 MA-2,Rep. Richard E. Neal,D,House,https://neal.house.gov,,RepRichardNeal,,94.44,6.1,,No
+FL,Sen. Bill Nelson,D,Senate,,,SenBillNelson,,91.11,8.89,,Yes
 WA-5,Rep. George R. Nethercutt,R,House,,,,,97.53,3,,Yes
 OH-18,Rep. Robert William Ney,R,House,,,,,96.03,4.49,Yes,Yes
+OK,Sen. Don Nickles,R,Senate,,,,,92.41,7.59,,Yes
 KY-3,Rep. Anne Meagher Northup,R,House,,,,,98.63,1.89,Yes,Yes
 DC-At-Large,Del. Eleanor Holmes Norton,D,House,https://norton.house.gov,,EleanorNorton,,0,,,
 GA-10,Rep. Charles W. Norwood,R,House,,,,,95.2,5.23,,Yes
 IA-2,Rep. James Allen Nussle,R,House,,,,,96.56,3.96,,Yes
+CA-34,Rep. Grace F. Napolitano,D,House,https://napolitano.house.gov,,GraceNapolitano,,96.2,4.22,,No
+NE,Sen. Ben Nelson,D,Senate,,,SenBenNelson,,76.34,23.66,,Yes
 MN-8,Rep. James L. Oberstar,D,House,,,JimOberstar,,84.54,15.99,,No
 WI-7,Rep. David R. Obey,D,House,,,,,90.91,9.51,,No
 MA-1,Rep. John W. Olver,D,House,,,,,88.61,11.92,,No
 TX-27,Rep. Solomon P. Ortiz,D,House,,,,,88.61,11.82,,Not Voting
-NE-3,Rep. Thomas William Osborne,R,House,,,,,95.7,4.71,Yes,Yes
-CA-3,Rep. Doug Ose,R,House,,,,,94.17,6.25,,Yes
-ID-1,Rep. C.L. Otter,R,House,,,,,93.31,7.21,,Yes
 NY-11,Rep. Major R. Owens,D,House,,,,,93.58,6.86,,No
 OH-4,Rep. Michael G. Oxley,R,House,,,,,98.57,1.86,Yes,Yes
+CA-3,Rep. Doug Ose,R,House,,,,,94.17,6.25,,Yes
+NE-3,Rep. Thomas William Osborne,R,House,,,,,95.7,4.71,Yes,Yes
+ID-1,Rep. C.L. Otter,R,House,,,,,93.31,7.21,,Yes
 NJ-6,Rep. Frank Pallone,D,House,https://pallone.house.gov,,FrankPallone,,91.21,9.2,,No
 NJ-8,Rep. Bill Pascrell Jr.,D,House,https://pascrell.house.gov,,BillPascrell,,92.74,7.68,,Yes
 AZ-2,Rep. Ed Pastor,D,House,,,PastorForAZ,,93.51,7,,No
-TX-14,Rep. Ron Paul,R,House,,,RepRonPaul,,68.45,31.98,,No
 NJ-10,Rep. Donald M. Payne,D,House,,,Payne10thNJ,,92.59,7.84,,No
 CA-8,Rep. Nancy Pelosi,D,House,https://pelosi.house.gov,,SpeakerPelosi,,95.01,5.53,,No
-IN-2,Rep. Mike Pence,R,House,,,RepMikePence,,95.32,5.2,Yes,Yes
 MN-7,Rep. Collin C. Peterson,D,House,,,,,75.51,25.03,,Yes
 PA-5,Rep. John E. Peterson,R,House,,,,,97.31,3.11,Yes,Yes
 WI-6,Rep. Tom Petri,R,House,,,,,90.06,10.45,,Yes
-IL-19,Rep. David D. Phelps,D,House,,,,,84.12,16.41,Yes,Yes
 MS-3,Rep. Charles W. Pickering,R,House,,,,,96.78,3.64,Yes,Yes
 PA-16,Rep. Joe Pitts,R,House,,,RepJoePitts,,94.88,5.64,Yes,Yes
-PA-19,Rep. Todd R. Platts,R,House,,,,,92.47,8.06,Yes,Yes
 CA-11,Rep. Richard W. Pombo,R,House,,,,,94.89,5.64,Yes,Yes
 ND-At-Large,Rep. Earl Pomeroy,D,House,,,,,88.8,11.62,,Yes
 OH-2,Rep. Rob Portman,R,House,https://www.portman.senate.gov,,SenRobPortman,,97.7,2.72,Yes,Yes
 NC-4,Rep. David E. Price,D,House,https://price.house.gov,,RepDavidEPrice,,95,5.52,,No
 OH-15,Rep. Deborah D. Pryce,R,House,,,,,96.91,3.53,Yes,Yes
+TX-14,Rep. Ron Paul,R,House,,,RepRonPaul,,68.45,31.98,,No
+IL-19,Rep. David D. Phelps,D,House,,,,,84.12,16.41,Yes,Yes
+PA-19,Rep. Todd R. Platts,R,House,,,,,92.47,8.06,Yes,Yes
 FL-12,Rep. Adam H. Putnam,R,House,,,,,98.51,2.02,Yes,Yes
+IN-2,Rep. Mike Pence,R,House,,,RepMikePence,,95.32,5.2,Yes,Yes
 NY-30,Rep. Jack Quinn,R,House,,,,,93.58,6.76,,Yes
 CA-19,Rep. George P. Radanovich,R,House,,,RepRadanovich,,96.81,3.63,Yes,Yes
 WV-3,Rep. Nick J. Rahall II,D,House,,,,,89.79,10.74,,No
 MN-3,Rep. James M. Ramstad,R,House,,,,,83.61,16.91,,Yes
 NY-15,Rep. Charles B. Rangel,D,House,,,CBRangel,,94.66,5.78,,No
+RI,Sen. Jack Reed,D,Senate,https://www.reed.senate.gov,,SenJackReed,,94.68,5.32,,No
 OH-16,Rep. Ralph Regula,R,House,,,,,97.54,2.97,,Yes
-MT-At-Large,Rep. Denny Rehberg,R,House,,,DennyRehberg,,98.06,2.46,,Yes
+NV,Sen. Harry Reid,D,Senate,,,SenatorReid,,95.99,4.01,,Yes
 TX-16,Rep. Silvestre Reyes,D,House,,,silvestrereyes,,92.33,8.12,,No
-NY-27,Rep. Thomas M. Reynolds,R,House,,,,,98.12,2.4,,Yes
 AL-3,Rep. Bob Riley,R,House,,,,,96.5,4.06,Yes,Yes
 MI-13,Rep. Lynn N. Rivers,D,House,,,,,93.09,7.43,,No
-TX-28,Rep. Ciro D. Rodriguez,D,House,,,,,95.18,5.34,,No
+KS,Sen. Pat Roberts,R,Senate,,,SenPatRoberts,,95.11,4.89,,Yes
+WV,Sen. John D. Rockefeller IV,D,Senate,,,SenRockefeller,,94.97,5.03,,Yes
 IN-3,Rep. Tim Roemer,D,House,,,,,88.65,11.87,Yes,Yes
 KY-5,Rep. Harold Rogers,R,House,https://halrogers.house.gov,,RepHalRogers,,98.23,2.3,,Yes
-MI-8,Rep. Mike Rogers,R,House,,,RepMikeRogers,,96.93,3.58,,Yes
 CA-45,Rep. Dana Rohrabacher,R,House,,,,,91.24,9.18,Yes,Yes
 FL-18,Rep. Ileana Ros-Lehtinen,R,House,,,RosLehtinen,,96.68,3.76,Yes,Yes
-AR-4,Rep. Mike Ross,D,House,,,RepMikeRoss,,87.59,12.92,Yes,Yes
 NJ-9,Rep. Steven R. Rothman,D,House,,,,,93.33,7.22,,Yes
 NJ-5,Rep. Marge Roukema,R,House,,,,,92.82,7.79,Yes,Not Voting
 CA-33,Rep. Lucille Roybal-Allard,D,House,https://roybal-allard.house.gov,,RepRoybalAllard,,96.01,4.41,,No
 CA-39,Rep. Edward Royce,R,House,,,RepEdRoyce,,90.1,10.31,Yes,Yes
 IL-1,Rep. Bobby L. Rush,D,House,https://rush.house.gov,,RepBobbyRush,,94.49,6.08,,No
-WI-1,Rep. Paul D. Ryan,R,House,,,SpeakerRyan,,94.22,6.31,,Yes
 KS-2,Rep. Jim R. Ryun,R,House,,,,,95.01,5.41,Yes,Yes
+TX-28,Rep. Ciro D. Rodriguez,D,House,,,,,95.18,5.34,,No
+NY-27,Rep. Thomas M. Reynolds,R,House,,,,,98.12,2.4,,Yes
+WI-1,Rep. Paul D. Ryan,R,House,,,SpeakerRyan,,94.22,6.31,,Yes
+MT-At-Large,Rep. Denny Rehberg,R,House,,,DennyRehberg,,98.06,2.46,,Yes
+MI-8,Rep. Mike Rogers,R,House,,,RepMikeRogers,,96.93,3.58,,Yes
+AR-4,Rep. Mike Ross,D,House,,,RepMikeRoss,,87.59,12.92,Yes,Yes
 MN-5,Rep. Martin Olav Sabo,D,House,,,,,86.51,14.02,,No
 CA-46,Rep. Loretta Sánchez,D,House,,,LorettaSanchez,,91.49,9.05,,No
 VT-At-Large,Rep. Bernard Sanders,ID,House,https://www.sanders.senate.gov,,SenSanders,,50.32,50.11,,No
 TX-1,Rep. Max A. Sandlin,D,House,,,,,89.28,11.24,Yes,Yes
+PA,Sen. Richard J. Santorum,R,Senate,,,,,93.98,6.02,,Yes
+MD,Sen. Paul S. Sarbanes,D,Senate,,,,,95.65,4.35,,No
 OH-14,Rep. Tom Sawyer,D,House,,,,,97.68,2.84,,No
 NJ-3,Rep. H. James Saxton,R,House,,,,,94.95,5.57,Yes,Yes
 FL-1,Rep. Joe Scarborough,R,House,,,,,88,12.73,,
 CO-4,Rep. Bob Schaffer,R,House,,,,,81.73,18.61,,Yes
-IL-9,Rep. Jan Schakowsky,D,House,https://schakowsky.house.gov,,JanSchakowsky,,91.4,9.12,,No
-CA-27,Rep. Adam B. Schiff,D,House,https://schiff.house.gov,,RepAdamSchiff,,93.59,6.93,,Yes
-VA-2,Rep. Edward L. Schrock,R,House,,,,,98.54,1.98,Yes,Yes
+NY,Sen. Charles E. Schumer,D,Senate,https://www.schumer.senate.gov,,SenSchumer,,93.3,6.7,,Yes
 VA-3,Rep. Robert C. Scott,D,House,https://bobbyscott.house.gov,,BobbyScott,,92.93,7.48,,No
 WI-9,Rep. F. James Sensenbrenner,R,House,,,JimPressOffice,,89.57,10.95,,Yes
 NY-16,Rep. José E. Serrano,D,House,,,RepJoseSerrano,,96.07,4.47,,No
 TX-5,Rep. Pete Sessions,R,House,https://sessions.house.gov,,PeteSessions,,95.62,4.81,Yes,Yes
 AZ-4,Rep. John Shadegg,R,House,,,,,92.61,7.91,Yes,Yes
 FL-22,Rep. E. Clay Shaw,R,House,,,,,96.44,4.08,,Yes
-CT-4,Rep. Christopher H. Shays,R,House,,,,,87.95,12.58,Yes,Yes
+AL,Sen. Richard C. Shelby,R,Senate,https://www.shelby.senate.gov,,SenShelby,,89.94,10.06,,Yes
 CA-24,Rep. Brad Sherman,D,House,https://sherman.house.gov,,BradSherman,,95.33,5.19,,Yes
-PA-10,Rep. Donald L. Sherwood,R,House,,,,,97.82,2.7,,Yes
 IL-20,Rep. John Shimkus,R,House,,,RepShimkus,,96.19,4.33,,Yes
-MS-4,Rep. Ronnie Shows,D,House,,,,,78.33,22.21,,Yes
 PA-9,Rep. Bud Shuster,R,House,,,,,97.8,2.78,,Yes
-PA-9,Rep. Bill Shuster,R,House,,,RepBillShuster,,0,,Yes,
-CT-2,Rep. Robert Ruhl Simmons,R,House,,,,,91.35,9.17,,Yes
-ID-2,Rep. Mike Simpson,R,House,https://simpson.house.gov,,CongMikeSimpson,,97.81,2.72,Yes,Yes
 VA-4,Rep. Norman Sisisky,D,House,,,,,87.5,12.5,,
 NM-2,Rep. Joe Skeen,R,House,,,,,97.45,2.96,Yes,Yes
 MO-4,Rep. Ike Skelton,D,House,,,,,86.85,13.67,,Yes
@@ -382,173 +462,93 @@ WA-9,Rep. Adam Smith,D,House,https://adamsmith.house.gov,,RepAdamSmith,,89.07,11
 NJ-4,Rep. Christopher H. Smith,R,House,https://chrissmith.house.gov,,RepChrisSmith,,92.74,7.68,Yes,Yes
 TX-21,Rep. Lamar Smith,R,House,,,LamarSmithTX21,,99.46,1.07,,Yes
 MI-7,Rep. Nick Smith,R,House,,,,,92.33,8.1,Yes,Yes
+NH,Sen. Bob Smith,R,Senate,,,,,89.47,10.53,,Yes
+ME,Sen. Olympia J. Snowe,R,Senate,,,SenatorSnowe,,77.42,22.58,,Yes
 AR-2,Rep. Vic Snyder,D,House,,,,,90.48,9.95,,No
-CA-31,Rep. Hilda L. Solis,D,House,,,,,95,5.43,,No
-IN-4,Rep. Mark Souder,R,House,,,,,95.44,5.1,,Yes
+PA,Sen. Arlen Specter,R,Senate,,,SenArlenSpecter,,76.09,23.91,,Yes
 SC-2,Rep. Floyd Spence,R,House,,,,,96.31,3.69,,
 SC-5,Rep. John M. Spratt Jr.,D,House,,,,,93.82,6.7,,Yes
+MI,Sen. Debbie Stabenow,D,Senate,https://www.stabenow.senate.gov,,SenStabenow,,95.18,4.82,,No
 CA-13,Rep. Pete Stark,D,House,,,petestark,,85.86,14.14,,No
 FL-6,Rep. Cliff Stearns,R,House,,,RepCliffStearns,,93.05,7.49,,Yes
 TX-17,Rep. Charles W. Stenholm,D,House,,,,,77.2,23.32,Yes,Yes
+AK,Sen. Ted F. Stevens,R,Senate,,,,,92.57,7.43,,Yes
 OH-6,Rep. Ted Strickland,D,House,,,,,88.61,11.9,,No
 AZ-3,Rep. Bob Stump,R,House,,,,,95.86,4.75,Yes,Not Voting
 MI-1,Rep. Bart Stupak,D,House,,,,,84.6,15.94,,No
-OK-1,Rep. John Sullivan,R,House,,,USRepSullivan,,97.92,2.08,,Yes
 NH-1,Rep. John E. Sununu,R,House,,,,,95.23,5.3,,Yes
+AL,Sen. Jeff Sessions,R,Senate,,,SenatorSessions,,90.55,9.45,,Yes
+OR,Sen. Gordon Harold Smith,R,Senate,,,,,85.46,14.54,,Yes
+IN-4,Rep. Mark Souder,R,House,,,,,95.44,5.1,,Yes
+CT-4,Rep. Christopher H. Shays,R,House,,,,,87.95,12.58,Yes,Yes
+IL-9,Rep. Jan Schakowsky,D,House,https://schakowsky.house.gov,,JanSchakowsky,,91.4,9.12,,No
+PA-10,Rep. Donald L. Sherwood,R,House,,,,,97.82,2.7,,Yes
+MS-4,Rep. Ronnie Shows,D,House,,,,,78.33,22.21,,Yes
+ID-2,Rep. Mike Simpson,R,House,https://simpson.house.gov,,CongMikeSimpson,,97.81,2.72,Yes,Yes
 NY-22,Rep. John E. Sweeney,R,House,,,,,92.8,7.75,Yes,Yes
-CO-6,Rep. Thomas G. Tancredo,R,House,,,,,84.05,16.37,Yes,Yes
+CA-27,Rep. Adam B. Schiff,D,House,https://schiff.house.gov,,RepAdamSchiff,,93.59,6.93,,Yes
+VA-2,Rep. Edward L. Schrock,R,House,,,,,98.54,1.98,Yes,Yes
+CT-2,Rep. Robert Ruhl Simmons,R,House,,,,,91.35,9.17,,Yes
+CA-31,Rep. Hilda L. Solis,D,House,,,,,95,5.43,,No
+PA-9,Rep. Bill Shuster,R,House,,,RepBillShuster,,0,,Yes,
+OK-1,Rep. John Sullivan,R,House,,,USRepSullivan,,97.92,2.08,,Yes
+MO,Sen. James M. Talent,R,Senate,,,,,0,0,,
 TN-8,Rep. John Tanner,D,House,,,,,83.17,17.36,,Yes
 CA-10,Rep. Ellen O. Tauscher,D,House,,,,,92.48,8.03,,Yes
 LA-3,Rep. William J. Tauzin,R,House,,,,,99.16,1.37,,Yes
 NC-11,Rep. Charles H. Taylor,R,House,,,,,96.29,4.16,,Yes
 MS-5,Rep. Gene Taylor,D,House,,,,,70.78,29.74,,Yes
-NE-2,Rep. Lee Terry,R,House,,,LEETERRYNE,,95.21,5.31,,Yes
+WY,Sen. Craig Thomas,R,Senate,,,,,93.72,6.28,,Yes
 CA-21,Rep. William M. Thomas,R,House,,,,,96.38,4.04,,Yes
 MS-2,Rep. Bennie Thompson,D,House,https://benniethompson.house.gov,,BennieGThompson,,87.22,13.31,,No
-CA-1,Rep. Mike Thompson,D,House,https://mikethompson.house.gov,,RepThompson,,88.22,12.3,,No
 TX-13,Rep. William M. Thornberry,R,House,,,MacTXPress,,97.1,3.41,Yes,Yes
 SD-At-Large,Rep. John Thune,R,House,https://www.thune.senate.gov,,SenJohnThune,,93.62,6.89,Yes,Yes
 FL-5,Rep. Karen L. Thurman,D,House,,,,,92.8,7.62,,Yes
+SC,Sen. Strom Thurmond,R,Senate,,,,,93.68,6.32,,Yes
 KS-4,Rep. Todd Tiahrt,R,House,,,RepToddTiahrt,,96.66,3.86,,Yes
-OH-12,Rep. Pat Tiberi,R,House,,,TiberiPress,,96.59,3.92,,Yes
 MA-6,Rep. John F. Tierney,D,House,,,RepTierney,,93.53,6.99,,No
-PA-15,Rep. Patrick J. Toomey,R,House,https://www.toomey.senate.gov,,SenToomey,,92.29,8.24,,Yes
+NJ,Sen. Robert G. Torricelli,D,Senate,,,,,89.24,10.76,,Yes
 NY-10,Rep. Edolphus Towns,D,House,,,edtowns,,91.86,8.72,,No
 OH-17,Rep. James A. Traficant Jr.,D,House,,,,,62.12,38.7,,
 TX-2,Rep. James Turner,D,House,,,,,86.78,13.74,Yes,Yes
-CO-2,Rep. Mark Udall,D,House,,,MarkUdall,,90.13,10.4,,No
-NM-3,Rep. Tom Udall,D,House,,,SenatorTomUdall,,89.41,11.1,,No
+TN,Sen. Fred Thompson,R,Senate,,,,,90.64,9.36,,Yes
+CO-6,Rep. Thomas G. Tancredo,R,House,,,,,84.05,16.37,Yes,Yes
+NE-2,Rep. Lee Terry,R,House,,,LEETERRYNE,,95.21,5.31,,Yes
+CA-1,Rep. Mike Thompson,D,House,https://mikethompson.house.gov,,RepThompson,,88.22,12.3,,No
+PA-15,Rep. Patrick J. Toomey,R,House,https://www.toomey.senate.gov,,SenToomey,,92.29,8.24,,Yes
+OH-12,Rep. Pat Tiberi,R,House,,,TiberiPress,,96.59,3.92,,Yes
 GU-At-Large,Del. Robert A. Underwood,D,House,,,,,0,,,
 MI-6,Rep. Fred Upton,R,House,https://upton.house.gov,,RepFredUpton,,94.8,5.71,,Yes
+CO-2,Rep. Mark Udall,D,House,,,MarkUdall,,90.13,10.4,,No
+NM-3,Rep. Tom Udall,D,House,,,SenatorTomUdall,,89.41,11.1,,No
 NY-12,Rep. Nydia M. Velázquez,D,House,https://velazquez.house.gov,,NydiaVelazquez,,93.28,7.16,,No
 IN-1,Rep. Peter J. Visclosky,D,House,,,RepVisclosky,,86.68,13.85,,No
+OH,Sen. George V. Voinovich,R,Senate,,,,,89.59,10.41,,Yes
 LA-1,Rep. David Vitter,R,House,,,,,97.87,2.56,Yes,Yes
-OR-2,Rep. Greg Walden,R,House,,,RepGregWalden,,97.95,2.56,,Yes
 NY-25,Rep. James T. Walsh,R,House,,,,,95.68,4.85,,Yes
 TN-3,Rep. Zach Wamp,R,House,,,zachwamp,,94.26,6.26,,Yes
+VA,Sen. John W. Warner,R,Senate,,,,,89.64,10.36,,Yes
 CA-35,Rep. Maxine Waters,D,House,https://waters.house.gov,,RepMaxineWaters,,82.72,17.73,,No
 OK-3,Rep. Wes Watkins,R,House,,,,,98.38,2.05,,Yes
-CA-32,Rep. Diane Watson,D,House,,,,,94.27,6.38,,No
 NC-12,Rep. Melvin Watt,D,House,,,MelWattNC12,,92.95,7.47,,No
 OK-4,Rep. J.C. Watts,R,House,,,,,97.8,2.53,Yes,Yes
 CA-29,Rep. Henry A. Waxman,D,House,,,WaxmanClimate,,96.19,4.37,,Yes
-NY-9,Rep. Anthony Weiner,D,House,,,repweiner,,95.48,5.06,,Yes
 FL-15,Rep. David J. Weldon,R,House,,,,,95.43,4.89,Yes,Yes
 PA-7,Rep. W. Curtis Weldon,R,House,,,,,94.68,5.87,,Yes
 IL-11,Rep. Gerald C. Weller,R,House,,,,,91.35,9.17,,Yes
+MN,Sen. Paul D. Wellstone,D,Senate,,,,,93.87,6.13,,No
 FL-19,Rep. Robert Wexler,D,House,,,,,94.81,5.64,,Yes
 KY-1,Rep. Edward Whitfield,R,House,,,RepEdWhitfield,,96.73,3.8,,Yes
 MS-1,Rep. Roger Wicker,R,House,https://www.wicker.senate.gov,,SenatorWicker,,95.95,4.56,Yes,Yes
-NM-1,Rep. Heather A. Wilson,R,House,,,,,96.27,4.24,,Yes
-SC-2,Rep. Joe Wilson,R,House,https://joewilson.house.gov,,RepJoeWilson,,97.33,2.88,Yes,Yes
 VA-10,Rep. Frank R. Wolf,R,House,,,RepWOLFPress,,96.18,4.33,,Yes
 CA-6,Rep. Lynn Woolsey,D,House,,,RepLynnWoolsey,,93.8,6.62,,No
-OR-1,Rep. David Wu,D,House,,,davidwu2010,,84.94,15.47,,No
+OR,Sen. Ron Wyden,D,Senate,https://www.wyden.senate.gov,,RonWyden,,91,9,,No
 MD-4,Rep. Albert Russell Wynn,D,House,,,,,93.52,7.01,,Yes
+NM-1,Rep. Heather A. Wilson,R,House,,,,,96.27,4.24,,Yes
+OR-2,Rep. Greg Walden,R,House,,,RepGregWalden,,97.95,2.56,,Yes
+NY-9,Rep. Anthony Weiner,D,House,,,repweiner,,95.48,5.06,,Yes
+OR-1,Rep. David Wu,D,House,,,davidwu2010,,84.94,15.47,,No
+CA-32,Rep. Diane Watson,D,House,,,,,94.27,6.38,,No
+SC-2,Rep. Joe Wilson,R,House,https://joewilson.house.gov,,RepJoeWilson,,97.33,2.88,Yes,Yes
 FL-10,Rep. C. W. Bill Young,R,House,,,,,97.17,3.38,Yes,Yes
 AK-At-Large,Rep. Don Young,R,House,,,RepDonYoung,,96.75,3.75,Yes,Yes
-HI,Sen. Daniel K. Akaka,D,Senate,,,SenatorAkaka,,95.53,4.47,,No
-CO,Sen. Wayne A. Allard,R,Senate,,,,,93.25,6.75,,Yes
-VA,Sen. George Felix Allen,R,Senate,,,,,93.11,6.89,,Yes
-MN,Sen. Dean Barkley,I,Senate,,,,,64.29,35.71,,
-MT,Sen. Max Baucus,D,Senate,,,,,81.12,18.88,,Yes
-IN,Sen. Evan Bayh,D,Senate,,,,,86.82,13.18,,Yes
-UT,Sen. Robert F. Bennett,R,Senate,,,,,95.73,4.27,,Yes
-DE,Sen. Joseph R. Biden Jr.,D,Senate,,,,,93.91,6.09,,Yes
-NM,Sen. Jeff Bingaman,D,Senate,,,jeffbingaman,,91.46,8.54,,No
-MO,Sen. Christopher S. Bond,R,Senate,,,,,93.62,6.38,,Yes
-CA,Sen. Barbara Boxer,D,Senate,,,SenatorBoxer,,92.35,7.65,,No
-LA,Sen. John B. Breaux,D,Senate,,,,,77.16,22.84,,Yes
-KS,Sen. Sam Brownback,R,Senate,,,SenSamBrownback,,92.66,7.34,,Yes
-KY,Sen. Jim Bunning,R,Senate,,,,,94.31,5.69,,Yes
-MT,Sen. Conrad Burns,R,Senate,,,,,94.58,5.42,,Yes
-WV,Sen. Robert C. Byrd,D,Senate,,,,,87.76,12.24,,No
-CO,Sen. Ben Nighthorse Campbell,R,Senate,,,,,90.86,9.14,,Yes
-WA,Sen. Maria Cantwell,D,Senate,https://www.cantwell.senate.gov,,SenatorCantwell,,93.4,6.6,,Yes
-MO,Sen. Jean Carnahan,D,Senate,,,,,90.23,9.77,,Yes
-DE,Sen. Thomas R. Carper,D,Senate,https://www.carper.senate.gov/public,,SenatorCarper,,87.7,12.3,,Yes
-RI,Sen. Lincoln D. Chafee,R,Senate,,,,,70.86,29.14,,No
-GA,Sen. Max Cleland,D,Senate,,,,,85.46,14.54,,Yes
-NY,Sen. Hillary Rodham Clinton,D,Senate,,,,,94.82,5.18,,Yes
-MS,Sen. Thad Cochran,R,Senate,,,SenThadCochran,,91.05,8.95,,Yes
-ME,Sen. Susan Collins,R,Senate,https://www.collins.senate.gov,,SenatorCollins,,78.86,21.14,,Yes
-ND,Sen. Kent Conrad,D,Senate,,,,,92.41,7.59,,No
-TX,Sen. John Cornyn,R,Senate,https://www.cornyn.senate.gov,,JohnCornyn,,0,0,,
-NJ,Sen. Jon Stevens Corzine,D,Senate,,,,,91.83,8.17,,No
-ID,Sen. Larry E. Craig,R,Senate,,,,,95.45,4.55,,Yes
-ID,Sen. Michael D. Crapo,R,Senate,https://www.crapo.senate.gov,,MikeCrapo,,95.31,4.69,,Yes
-SD,Sen. Thomas A. Daschle,D,Senate,,,,,95.39,4.61,,Yes
-MN,Sen. Mark Dayton,D,Senate,,,,,93.93,6.07,,No
-OH,Sen. Michael DeWine,R,Senate,,,,,90.26,9.74,,Yes
-CT,Sen. Christopher J. Dodd,D,Senate,,,SenChrisDodd,,94.99,5.01,,Yes
-NM,Sen. Pete V. Domenici,R,Senate,,,,,94.34,5.66,,Yes
-ND,Sen. Byron L. Dorgan,D,Senate,,,,,94.32,5.68,,Yes
-IL,Sen. Richard J. Durbin,D,Senate,https://www.durbin.senate.gov,,SenatorDurbin,,93.67,6.33,,No
-NC,Sen. John Reid Edwards,D,Senate,,,,,93.72,6.28,,Yes
-NV,Sen. John Ensign,R,Senate,,,SenEnsign,,87.91,12.09,,Yes
-WY,Sen. Michael B. Enzi,R,Senate,,,SenatorEnzi,,92.59,7.41,,Yes
-WI,Sen. Russ Feingold,D,Senate,,,russfeingold,,82.18,17.82,,No
-CA,Sen. Dianne Feinstein,D,Senate,https://www.feinstein.senate.gov,,SenFeinstein,,89.9,10.1,,Yes
-IL,Sen. Peter G. Fitzgerald,R,Senate,,,,,81.56,18.44,,Yes
-TN,Sen. William H. Frist,R,Senate,,,,,96.43,3.57,,Yes
-FL,Sen. Bob Graham,D,Senate,,,,,91.64,8.36,,No
-TX,Sen. Phil Gramm,R,Senate,,,,,90.05,9.95,,Yes
-IA,Sen. Charles E. Grassley,R,Senate,https://www.grassley.senate.gov,,ChuckGrassley,,93,7,,Yes
-NH,Sen. Judd Gregg,R,Senate,,,,,90.18,9.82,,Yes
-NE,Sen. Chuck T. Hagel,R,Senate,,,,,93.56,6.44,,Yes
-IA,Sen. Tom Harkin,D,Senate,,,SenatorHarkin,,94.58,5.42,,Yes
-UT,Sen. Orrin G. Hatch,R,Senate,,,SenOrrinHatch,,95.59,4.41,,Yes
-NC,Sen. Jesse Helms,R,Senate,,,,,93.02,6.98,,Yes
-SC,Sen. Ernest F. Hollings,D,Senate,,,,,92.6,7.4,,Yes
-AR,Sen. Tim Hutchinson,R,Senate,,,,,90.68,9.32,,Yes
-TX,Sen. Kay Bailey Hutchison,R,Senate,,,kaybaileyhutch,,90.89,9.11,,Yes
-OK,Sen. James M. Inhofe,R,Senate,https://www.inhofe.senate.gov,,InhofePress,,94.03,5.97,,Yes
-HI,Sen. Daniel K. Inouye,D,Senate,,,daniel_inouye,,94.49,5.51,,No
-VT,Sen. James M. Jeffords,I,Senate,,,,,89.74,10.26,,No
-VT,Sen. James M. Jeffords,I,Senate,,,,,89.74,10.26,,No
-SD,Sen. Tim Johnson,D,Senate,,,SenJohnsonSD,,92.37,7.63,,Yes
-MA,Sen. Edward M. Kennedy,D,Senate,,,,,93.61,6.39,,No
-MA,Sen. John Kerry,D,Senate,,,,,95.7,4.3,,Yes
-WI,Sen. Herb Kohl,D,Senate,,,,,92.28,7.72,,Yes
-AZ,Sen. Jon Kyl,R,Senate,,,senjonkyl,,89.41,10.59,,Yes
-LA,Sen. Mary L. Landrieu,D,Senate,,,SenLandrieu,,86.18,13.82,,Yes
-VT,Sen. Patrick J. Leahy,D,Senate,https://www.leahy.senate.gov,,SenatorLeahy,,95.45,4.55,,No
-MI,Sen. Carl Levin,D,Senate,,,SenCarlLevin,,95.35,4.65,,No
-CT,Sen. Joseph I. Lieberman,D,Senate,,,JoeLieberman,,93.46,6.54,,Yes
-AR,Sen. Blanche Lincoln,D,Senate,,,,,85.11,14.89,,Yes
-MS,Sen. Trent Lott,R,Senate,,,,,94.82,5.18,,Yes
-IN,Sen. Richard G. Lugar,R,Senate,,,senatorlugar,,92.69,7.31,,Yes
-AZ,Sen. John McCain,R,Senate,,,SenJohnMcCain,,76.17,23.83,,Yes
-KY,Sen. Mitch McConnell,R,Senate,https://www.mcconnell.senate.gov,,McConnellPress,,97.11,2.89,,Yes
-MD,Sen. Barbara A. Mikulski,D,Senate,,,SenatorBarb,,96.74,3.26,,No
-GA,Sen. Zell Bryan Miller,D,Senate,,,,,67.52,32.48,,Yes
-AK,Sen. Frank H. Murkowski,R,Senate,,,,,95.01,4.99,,Yes
-AK,Sen. Lisa Murkowski,R,Senate,https://www.murkowski.senate.gov,,LisaMurkowski,,0,0,,
-WA,Sen. Patty Murray,D,Senate,https://www.murray.senate.gov,,PattyMurray,,93.01,6.99,,No
-FL,Sen. Bill Nelson,D,Senate,,,SenBillNelson,,91.11,8.89,,Yes
-NE,Sen. Ben Nelson,D,Senate,,,SenBenNelson,,76.34,23.66,,Yes
-OK,Sen. Don Nickles,R,Senate,,,,,92.41,7.59,,Yes
-RI,Sen. Jack Reed,D,Senate,https://www.reed.senate.gov,,SenJackReed,,94.68,5.32,,No
-NV,Sen. Harry Reid,D,Senate,,,SenatorReid,,95.99,4.01,,Yes
-KS,Sen. Pat Roberts,R,Senate,,,SenPatRoberts,,95.11,4.89,,Yes
-WV,Sen. John D. Rockefeller IV,D,Senate,,,SenRockefeller,,94.97,5.03,,Yes
-PA,Sen. Richard J. Santorum,R,Senate,,,,,93.98,6.02,,Yes
-MD,Sen. Paul S. Sarbanes,D,Senate,,,,,95.65,4.35,,No
-NY,Sen. Charles E. Schumer,D,Senate,https://www.schumer.senate.gov,,SenSchumer,,93.3,6.7,,Yes
-AL,Sen. Jeff Sessions,R,Senate,,,SenatorSessions,,90.55,9.45,,Yes
-AL,Sen. Richard C. Shelby,R,Senate,https://www.shelby.senate.gov,,SenShelby,,89.94,10.06,,Yes
-NH,Sen. Bob Smith,R,Senate,,,,,89.47,10.53,,Yes
-OR,Sen. Gordon Harold Smith,R,Senate,,,,,85.46,14.54,,Yes
-ME,Sen. Olympia J. Snowe,R,Senate,,,SenatorSnowe,,77.42,22.58,,Yes
-PA,Sen. Arlen Specter,R,Senate,,,SenArlenSpecter,,76.09,23.91,,Yes
-MI,Sen. Debbie Stabenow,D,Senate,https://www.stabenow.senate.gov,,SenStabenow,,95.18,4.82,,No
-AK,Sen. Ted F. Stevens,R,Senate,,,,,92.57,7.43,,Yes
-MO,Sen. James M. Talent,R,Senate,,,,,0,0,,
-WY,Sen. Craig Thomas,R,Senate,,,,,93.72,6.28,,Yes
-TN,Sen. Fred Thompson,R,Senate,,,,,90.64,9.36,,Yes
-SC,Sen. Strom Thurmond,R,Senate,,,,,93.68,6.32,,Yes
-NJ,Sen. Robert G. Torricelli,D,Senate,,,,,89.24,10.76,,Yes
-OH,Sen. George V. Voinovich,R,Senate,,,,,89.59,10.41,,Yes
-VA,Sen. John W. Warner,R,Senate,,,,,89.64,10.36,,Yes
-MN,Sen. Paul D. Wellstone,D,Senate,,,,,93.87,6.13,,No
-OR,Sen. Ron Wyden,D,Senate,https://www.wyden.senate.gov,,RonWyden,,91,9,,No

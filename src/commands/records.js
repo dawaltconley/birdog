@@ -87,6 +87,7 @@ exports.handler = async argv => {
     Promise.all(votes),
   ])
 
+  reps = reps.sort((a, b) => a.id.localeCompare(b.id))
   cosponsors = cosponsors.flat()
   votes = votes.reduce((columns, vote) => {
     if (vote.length === 2 && vote[0].chamber !== vote[1].chamber) {
