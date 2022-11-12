@@ -1,12 +1,10 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import url from 'node:url'
 import axios from 'axios'
 import parseLeg from 'legislative-parser'
 import maxAsync from '@dawaltconley/max-async'
 import appName from './package-name.js'
-
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
+import envPaths from 'env-paths'
 
 const chambers = ['house', 'senate']
 const legTypes = [
@@ -18,15 +16,11 @@ const legTypes = [
 
 const isString = obj => typeof obj === 'string' || obj instanceof String
 
+const cachePath = envPaths(appName).cache
+
 class Cache {
   constructor(...filePath) {
-    this.path = path.resolve(
-      __dirname,
-      '..',
-      '.cache',
-      appName,
-      ...filePath.map(p => p.toString())
-    )
+    this.path = path.join(cachePath, ...filePath.map(p => p.toString()))
     if (!this.modified)
       fs.mkdirSync(path.dirname(this.path), { recursive: true })
 
