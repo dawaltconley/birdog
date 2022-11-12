@@ -42,8 +42,8 @@
     "url": "git+https://github.com/dawaltconley/birdog.git"
   },
   "bin": {
-    "birdog": "src/birdog",
-    "birddog": "src/birdog"
+    "birdog": "src/birdog.js",
+    "birddog": "src/birdog.js"
   },
   "bugs": {
     "url": "https://github.com/dawaltconley/birdog/issues"
