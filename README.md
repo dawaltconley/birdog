@@ -49,5 +49,5 @@ This is a very experimental version, published for testing. I may add more featu
 ### To-dos
 
 - Convert to Typescript, probably using & contributing to the unofficial [ProPublica SDK](https://github.com/njgingrich/propublica-congress-sdk)
-- Add unit tests
 - Allow adding the results of a query directly to a shared database, i.e. Airtable or Google Sheets. Having a regularly-updated sheet is pretty important for legislative campaigns.
+- Distribute as executable binaries. I have started exploring options using caxa, which is probably the best bet for a JavaScript CLI. Converting this project to Deno would help to, and may be more reliable, although the file size is currently considerably larger. Finally, I could rewrite this script in Go or another language suited to binary compilation and distribution. The main barrier to that at the moment is the [legislative-parser](https://github.com/dawaltconley/legislative-parser) dependency, which would need to be re-written in [pigeon](https://github.com/mna/pigeon) or something similar.
