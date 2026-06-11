@@ -2,6 +2,10 @@
 
 A simple CLI using the ProPublica database to track the voting records of members of the US Congress.
 
+## Update
+
+The Propublica API has been shut down, so this package no longer works. I hope to write a separate application using the congress.gov API, but I don't expect to use much from this project, and I am not planning to work on it further. Feel free to fork if it's useful.
+
 ## Install &amp; configure
 
 Install via npm:
